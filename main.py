@@ -16,5 +16,14 @@
 # # return robber_2
 # print (robber_2)
 
+print('Enter the string to check the palindrome')
+x = input()
+
+reverse_x = x[::-1]
+print(reverse_x)
+if reverse_x == x:
+    print('The entered string is a palindrome')
+else:
+    print('The entered string is not a paindrome')
 
 
