@@ -16,14 +16,24 @@
 # # return robber_2
 # print (robber_2)
 
-print('Enter the string to check the palindrome')
-x = input()
+# print('Enter the string to check the palindrome')
+# x = input()
+#
+# reverse_x = x[::-1]
+# print(reverse_x)
+# if reverse_x == x:
+#     print('The entered string is a palindrome')
+# else:
+#     print('The entered string is not a paindrome')
+#
 
-reverse_x = x[::-1]
-print(reverse_x)
-if reverse_x == x:
-    print('The entered string is a palindrome')
-else:
-    print('The entered string is not a paindrome')
 
+def calculator():
+    print('Enter the numbers for addition')
+    num1 = int(input())
+    num2 = int(input())
+    sum  = num1 + num2
+    print('The sum is = ',sum)
+
+calculator()
 
