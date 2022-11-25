@@ -121,6 +121,14 @@
 # Person.number_of_people = 8
 # print(p2.number_of_people)
 # print(p1.number_of_people)
-#
-#
 
+
+#capitalize method
+ss = 'Harshal$$$$$Mehta'
+ss1 = ss.capitalize()
+print (ss1)
+
+
+ss2 = ss.encode()
+
+print (ss2)
