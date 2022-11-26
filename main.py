@@ -132,3 +132,11 @@ print (ss1)
 ss2 = ss.encode()
 
 print (ss2)
+
+
+text = "Meet"
+x = text.center(20, 'x' )
+print (x)
+
+
+
