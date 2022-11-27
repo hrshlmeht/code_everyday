@@ -124,19 +124,36 @@
 
 
 #capitalize method
-ss = 'Harshal$$$$$Mehta'
-ss1 = ss.capitalize()
-print (ss1)
+# ss = 'Harshal$$$$$Mehta'
+# ss1 = ss.capitalize()
+# print (ss1)
+#
+#
+# ss2 = ss.encode()
+#
+# print (ss2)
+#
+#
+# text = "Meet"
+# x = text.center(20, 'x' )
+# print (x)
+
+#leetcode problem - Longest Prefix problem
+
+class meet:
+    def __init__(self , name , age ) :
+        self.name = name
+        self.age = age
+
+    def update(self , new_age ):
+        self.age = new_age
+        print(new_age)
 
 
-ss2 = ss.encode()
-
-print (ss2)
-
-
-text = "Meet"
-x = text.center(20, 'x' )
-print (x)
-
-
-
+print("Please enter  your name and age")
+input_name = input()
+input_age = input()
+s = meet(input_name , input_age)
+print("Please enter the age you want to update")
+input_newage = input()
+s.update(input_newage)
