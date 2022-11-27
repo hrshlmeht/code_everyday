@@ -138,27 +138,68 @@
 # x = text.center(20, 'x' )
 # print (x)
 
+
+
+# class meet:
+#     def __init__(self , name , age ) :
+#         self.name = name
+#         self.age = age
+#         print(f"We have added {name} who is aging {age}" )
+#
+#     def update(self , name , new_age ):
+#         self.age = new_age
+#         print(f"The updated age of {name}  is {new_age}")
+#
+#     # def delete(self, deleted_name ):
+#     #     self.name = deleted_name
+# class delete(meet):
+#     def delete_wala(self ,delete_data  ):
+#         self.delete = delete_data
+#         print(f"The person having  data has been deleted as per {delete_data}")
+
+
+# print("Please enter  your name and age")
+# input_name = input()
+# input_age = input()
+# s = meet(input_name , input_age)
+# print("Please enter the age you want to update")
+# input_newage = input()
+# s.update( input_name , input_newage )
+# print("Enter the name you want to delete ")
+# delete_name = input()
+# d  = delete(input_name , input_age)
+# d.delete_wala(delete_name)
+
+
 #leetcode problem - Longest Prefix problem
 
-class meet:
-    def __init__(self , name , age ) :
-        self.name = name
-        self.age = age
-        print(f"We have added {name} who is aging {age}" )
 
-    def update(self , name , new_age ):
-        self.age = new_age
-        print(f"The updated age of {name}  is {new_age}")
+# existing_user = ['Harshal', 'Meet', 'Harshank', 'Golo', 'Keval']
+#
+# class library:
+#
+#     def library_create(self , user_name):
+#         self.name = user_name
+#         if user_name  in existing_user:
+#           print('The user is already existing please proceed to purchase the book')
+#         else :
+#           print('The user is not present please register the user first')
+#
+#     def library_update(self, user_name):
+#         self.name =user_name
+#         if user_name in existing_user:
+#             existing_user.remove(user_name)
+#             print( f'The user has been deleted and the updated list is {existing_user}')
+#
+#
+#
+#
+# lib = library()
+# print('Enter the name of the user')
+# name = input()
+# lib.library_create(name)
+# print('Enter the name of the user to delete the record ')
+# name_update = input()
+# lib.library_update(name_update)
 
-    # def delete(self, deleted_name ):
-    #     self.name = deleted_name
-    #
 
-
-print("Please enter  your name and age")
-input_name = input()
-input_age = input()
-s = meet(input_name , input_age)
-print("Please enter the age you want to update")
-input_newage = input()
-s.update( input_name , input_newage )
