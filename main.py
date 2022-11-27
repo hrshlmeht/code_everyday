@@ -144,10 +144,15 @@ class meet:
     def __init__(self , name , age ) :
         self.name = name
         self.age = age
+        print(f"We have added {name} who is aging {age}" )
 
-    def update(self , new_age ):
+    def update(self , name , new_age ):
         self.age = new_age
-        print(new_age)
+        print(f"The updated age of {name}  is {new_age}")
+
+    # def delete(self, deleted_name ):
+    #     self.name = deleted_name
+    #
 
 
 print("Please enter  your name and age")
@@ -156,4 +161,4 @@ input_age = input()
 s = meet(input_name , input_age)
 print("Please enter the age you want to update")
 input_newage = input()
-s.update(input_newage)
+s.update( input_name , input_newage )
