@@ -171,7 +171,6 @@
 # d.delete_wala(delete_name)
 
 
-#leetcode problem - Longest Prefix problem
 
 
 # existing_user = ['Harshal', 'Meet', 'Harshank', 'Golo', 'Keval']
@@ -204,32 +203,46 @@
 
 
 
-l= [10 , 11 ,12 , 13 , 14]
+# l= [10 , 11 ,12 , 13 , 14]
+#
+# class main:
+#     def imp_func(self):
+#         for i in range(len(l)):
+#             print(f"The {i} element is {l[i]}")
+#
+#     def altering(self , index , modified):
+#         l[index] = modified
+#         print(l)
+#
+#     def add_person(self):
+#         print("Enter the name of the person to append list")
+#         person = input()
+#         l.append(person)
+#         print(f"The new updated list is {l}")
+#
+#
+# m = main()
+# m.imp_func()
+# print('Enter the index to modify')
+# index_from_user = int(input())
+# modified_data=input()
+# m.altering(index_from_user , modified_data )
+# m.add_person()
 
-class main:
-    def imp_func(self):
-        for i in range(len(l)):
-            print(f"The {i} element is {l[i]}")
 
-    def altering(self , index , modified):
-        l[index] = modified
-        print(l)
-
-    def add_person(self):
-        print("Enter the name of the person to append list")
-        person = input()
-        l.append(person)
-        print(f"The new updated list is {l}")
-
-
-m = main()
-m.imp_func()
-print('Enter the index to modify')
-index_from_user = int(input())
-modified_data=input()
-m.altering(index_from_user , modified_data )
-m.add_person()
-
+#leetcode problem of longest prefix
+# strs = ['flower' , 'flow ', 'flowing ']
+#
+# def solution():
+#     result = " "
+#     for s in range(len(strs[0])):
+#         for i in strs:
+#             if i == len(s) or s[i]!= strs[0][1]:
+#                 print (result)
+#         result += strs[0][i]
+#
+#     print (result)
+#
 
 
 
