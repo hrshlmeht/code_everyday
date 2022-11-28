@@ -191,9 +191,9 @@
 #             existing_user.remove(user_name)
 #             print( f'The user has been deleted and the updated list is {existing_user}')
 #
-#
-#
-#
+
+
+
 # lib = library()
 # print('Enter the name of the user')
 # name = input()
@@ -201,5 +201,40 @@
 # print('Enter the name of the user to delete the record ')
 # name_update = input()
 # lib.library_update(name_update)
+
+
+
+l= [10 , 11 ,12 , 13 , 14]
+
+class main:
+    def imp_func(self):
+        for i in range(len(l)):
+            print(f"The {i} element is {l[i]}")
+
+    def altering(self , index , modified):
+        l[index] = modified
+        print(l)
+
+    def add_person(self):
+        print("Enter the name of the person to append list")
+        person = input()
+        l.append(person)
+        print(f"The new updated list is {l}")
+
+
+m = main()
+m.imp_func()
+print('Enter the index to modify')
+index_from_user = int(input())
+modified_data=input()
+m.altering(index_from_user , modified_data )
+m.add_person()
+
+
+
+
+
+
+
 
 
