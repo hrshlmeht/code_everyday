@@ -243,6 +243,9 @@
 #
 #     print (result)
 #
+
+#####################################################################
+############we cannot import curses in any IDE , however we can write trhis program in 1 file and run it using cmd. Its a group approach for running programs having curses library
 import curses
 from curses import wrapper
 import queue
