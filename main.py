@@ -363,6 +363,25 @@
 # print(list(enum_stu))
 
 
-
+# Rows = int(input("Give the number of rows:"))
+# Columns = int(input("Give the number of columns:"))
+#
+# # Initializing the matrix
+# example_matrix = []
+# print("Please give the entries row-wise:")
+#
+# # For user input
+# for  i in range(Rows):  # This for loop is to arrange rows
+#     r =[]
+#     for k in range(Columns):  # This for loop is to arrange columns
+#         r.append(int(input()))
+#     example_matrix.append(r)
+#
+# # Printing the matrix given by user
+# for i in range(Rows):
+#     for k in range(Columns):
+#         print(example_matrix[i][k], end=" ")
+#     print()
+#
 
 
