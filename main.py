@@ -347,5 +347,22 @@
 # hash = enumerate(sample_list)
 
 # print (list(hash))
+#
+# print('Enter the number of students in the list')
+# num = int(input())
+# students = list()
+#
+# for i in range(num):
+#     print("Enter the name of students")
+#     student = input()
+#     students.append(student)
+#
+# print(students)
+#
+# enum_stu = enumerate(students)
+# print(list(enum_stu))
+
+
+
 
 
