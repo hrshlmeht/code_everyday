@@ -336,3 +336,16 @@
 #     stdscr.getch()
 # wrapper(main)
 
+
+# print('Enter the number for displaying the table')
+# num = int(input())
+#
+# for i  in range( 1 , 11):
+#     print( i* num)
+#
+# sample_list = ['Yolo' , 'Polo', 'Golo']
+# hash = enumerate(sample_list)
+
+# print (list(hash))
+
+
