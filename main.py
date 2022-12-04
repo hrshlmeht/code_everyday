@@ -399,15 +399,27 @@ def get_links():
     links = data['links']
     return links
 
-
 def get_scoreboard():
     scoreboard = get_links()['currentScoreboard']
-    data = get(BASE_URL + scoreboard).json()
-    printer.pprint(data)
+    games = get(BASE_URL + scoreboard).json()['games']
 
+    for game in games:
+        home_team = game['hTeam']
+        away_team = game['vTeam']
+        clock = game['clock']
+        period = game['period']
+
+
+        print('__________________________________________________________________________________________________')
+        print(f"{home_team['triCode']} VS {away_team['triCode']} ")
+        if home_team['score'] == '':
+            print('The match is not now')
+        else :
+            print(f"SCORE = {home_team['score']}  -- {away_team['score']}")
 
 
 get_scoreboard()
+
 
 
 # def get_links():
