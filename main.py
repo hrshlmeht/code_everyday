@@ -72,7 +72,7 @@
 # course.add_student(s3)
 # print(course.average())
 
-#learning inhertitance
+# learning inhertitance
 # class animal:
 #     def __init__(self, name , age ):
 #         self.name = name
@@ -107,7 +107,7 @@
 # c.show_func()
 # d.speak_func()
 
-#global variable concept
+# global variable concept
 
 # class Person:
 #     number_of_people = 0
@@ -123,7 +123,7 @@
 # print(p1.number_of_people)
 
 
-#capitalize method
+# capitalize method
 # ss = 'Harshal$$$$$Mehta'
 # ss1 = ss.capitalize()
 # print (ss1)
@@ -137,7 +137,6 @@
 # text = "Meet"
 # x = text.center(20, 'x' )
 # print (x)
-
 
 
 # class meet:
@@ -171,8 +170,6 @@
 # d.delete_wala(delete_name)
 
 
-
-
 # existing_user = ['Harshal', 'Meet', 'Harshank', 'Golo', 'Keval']
 #
 # class library:
@@ -192,7 +189,6 @@
 #
 
 
-
 # lib = library()
 # print('Enter the name of the user')
 # name = input()
@@ -200,7 +196,6 @@
 # print('Enter the name of the user to delete the record ')
 # name_update = input()
 # lib.library_update(name_update)
-
 
 
 # l= [10 , 11 ,12 , 13 , 14]
@@ -230,7 +225,7 @@
 # m.add_person()
 
 
-#leetcode problem of longest prefix
+# leetcode problem of longest prefix
 # strs = ['flower' , 'flow ', 'flowing ']
 #
 # def solution():
@@ -387,54 +382,88 @@
 
 ###get the data from the link - https://data.nba.net/prod/v1/today.json (open API)
 
-from requests import get
-from pprint import PrettyPrinter
-
-BASE_URL = "https://data.nba.net"
-ALL_JSON = "/prod/v1/today.json"
-printer = PrettyPrinter()
-
-def get_links():
-    data = get(BASE_URL+ALL_JSON).json()
-    links = data['links']
-    return links
-
-def get_scoreboard():
-    scoreboard = get_links()['currentScoreboard']
-    games = get(BASE_URL + scoreboard).json()['games']
-
-    for game in games:
-        home_team = game['hTeam']
-        away_team = game['vTeam']
-        clock = game['clock']
-        period = game['period']
-
-
-        print('__________________________________________________________________________________________________')
-        print(f"{home_team['triCode']} VS {away_team['triCode']} ")
-        if home_team['score'] == '':
-            print('The match is not now')
-        else :
-            print(f"SCORE = {home_team['score']}  -- {away_team['score']}")
-
-
-get_scoreboard()
-
-
-
+# from requests import get
+# from pprint import PrettyPrinter
+#
+# BASE_URL = "https://data.nba.net"
+# ALL_JSON = "/prod/v1/today.json"
+# printer = PrettyPrinter()
+# #data = get(BASE_URL + ALL_JSON).json()
+# #printer.pprint(data)
+#
+# def get_links():
+#     data = get(BASE_URL + ALL_JSON).json()
+#     links = data['links']
+#     return links
+#
+# def get_schedule():
+#     rankings = get_links()['leagueSchedule']
+#     print(rankings)
+#     rankings_data = get(BASE_URL + rankings).json()
+#     printer.pprint(rankings_data.keys())
+#
+#
+# def get_scoreboard():
+#     scoreboard = get_links()['currentScoreboard']
+#     games = get(BASE_URL + scoreboard).json()['games']
+#
+#     for game in games:
+#         home_team = game['hTeam']
+#         away_team = game['vTeam']
+#
+#         print('__________________________________________________________________________________________________')
+#         print(f"{home_team['triCode']} VS {away_team['triCode']} ")
+#         if home_team['score'] == '':
+#             print('The match is not now')
+#         else:
+#             print(f"SCORE = {home_team['score']}  -- {away_team['score']}")
+#
+#
+# get_schedule()
+# get_scoreboard()
+#_________________________uncomment till here
 # def get_links():
 #     data = get(BASE_URL+ALL_JSON).json()
 #     #printer.pprint(data)
 #     links = data['links']
 #     printer.pprint(data)
 
-
 # def get_scoreboard():
 #     scoreboard = get_links()['leagueSchedule']
 #     printer.pprint(leagueSchedule)
 
+import math
+import os
+import random
+import re
+import sys
 
+#hackerrank camel case problem
+#
+# Complete the 'camelcase' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts STRING s as parameter.
+#
 
-
-
+# def camelcase(s):
+#     # Write your code here
+#     count = 0
+#     for i in range(len(s)):
+#         j = ord(s[i])
+#         if (j > 97 and j < 112):
+#             i = i + 1
+#         elif count = count +1
+#
+#
+# if __name__ == '__main__':
+#     fptr = open(os.environ['OUTPUT_PATH'], 'w')
+#
+#     s = input()
+#
+#     result = camelcase(s)
+#
+#     fptr.write(str(result) + '\n')
+#
+#     fptr.close()
 
