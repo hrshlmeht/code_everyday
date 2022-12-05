@@ -531,28 +531,32 @@ import sys
 #
 #         return len(stack) == 0
 
-names = []
-print("Enter the number of studens you want to add to the record")
-no = int(input())
-for i in range(no):
-    print("Enter the name of the student to be added ")
-    name = input()
-    names.append(name)
-    print("Record added succesfully")
-
-print("Enter the name of student you want to search ")
-name_search = input()
-if name_search in names:
-    print ("Yes it is present")
-else:
-    print ("The person is not present")
-
-print (names)
-print("Enter the name of the student you want to delete from the list")
-del_name = input()
-if del_name in names:
-    del names[del_name]
-    print('The updated list is ')
-    print(names)
 
 
+# names = []
+# print("Enter the number of studens you want to add to the record")
+# no = int(input())
+# for i in range(no):
+#     print("Enter the name of the student to be added ")
+#     name = input()
+#     names.append(name)
+#     print("Record added succesfully")
+#
+# print("Enter the name of student you want to search ")
+# name_search = input()
+# if name_search in names:
+#     print ("Yes it is present")
+# else:
+#     print ("The person is not present")
+#
+# print (names)
+# print("Enter the name of the student you want to delete from the list")
+# del_name = input()
+# if del_name in names:
+#     names.remove(del_name)
+#     print('The updated list is ')
+#     print(names)
+#
+#
+# roll_no =  enumerate((names) , 1)
+# print(list(roll_no))
