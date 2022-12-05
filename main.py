@@ -388,21 +388,21 @@
 # BASE_URL = "https://data.nba.net"
 # ALL_JSON = "/prod/v1/today.json"
 # printer = PrettyPrinter()
-# #data = get(BASE_URL + ALL_JSON).json()
-# #printer.pprint(data)
-#
+#data = get(BASE_URL + ALL_JSON).json()
+#printer.pprint(data)
+
 # def get_links():
 #     data = get(BASE_URL + ALL_JSON).json()
 #     links = data['links']
 #     return links
-#
+
 # def get_schedule():
 #     rankings = get_links()['leagueSchedule']
 #     print(rankings)
-#     rankings_data = get(BASE_URL + rankings).json()
-#     printer.pprint(rankings_data.keys())
-#
-#
+#     rankings_data = get(BASE_URL + rankings).json()['league']
+#     printer.pprint(rankings_data)
+
+
 # def get_scoreboard():
 #     scoreboard = get_links()['currentScoreboard']
 #     games = get(BASE_URL + scoreboard).json()['games']
@@ -419,9 +419,23 @@
 #             print(f"SCORE = {home_team['score']}  -- {away_team['score']}")
 #
 #
-# get_schedule()
-# get_scoreboard()
-#_________________________uncomment till here
+# def get_stats():
+#     stats = get_links()['leagueTeamStatsLeaders']
+#     data = get(BASE_URL + stats).json()['league']['standard']['regularSeason']['teams']
+#
+#     for team in data:
+#         name = team['name']
+#         nickname = team['nickname']
+#
+#         ppg = team['ppg']
+#         print(f" {name} -  {nickname} has scored {ppg} in game")
+#
+#
+#
+# # get_schedule()
+# #get_scoreboard()
+# get_stats()
+
 # def get_links():
 #     data = get(BASE_URL+ALL_JSON).json()
 #     #printer.pprint(data)
