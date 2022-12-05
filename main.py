@@ -491,5 +491,68 @@ import sys
 #                 i += 1
 #         return i
 #
+#Leetcode for parentheses checkk not working
+# s = ['(())']
+# class Solution:
+#     def isValid(self, s: str) -> str:
+#         stack = []
+#         mapClosedOpen = {")": "(", "]": "[", "}": "{"}
 #
+#         for c in s:
+#             if c in mapClosedOpen:
+#                 if stack and stack[-1] == s[c]:
+#                     stack.pop()
+#                 else:
+#                     return False
+#             else:
+#                 stack.append(c)
+#         if stack == None:
+#             print ('True')
+#         else:
+#             print ('False')
+#leetcdoe for parentheses working
+# class Solution:
+#     def isValid(self, s: str) -> bool:
+#         stack = []
+#
+#         mapping = {
+#             '(': ')',
+#             '[': ']',
+#             '{': '}'
+#         }
+#
+#         for char in s:
+#             if char in mapping.keys():
+#                 stack.append(mapping[char])
+#             elif not stack or stack[-1] != char:
+#                 return False
+#             else:
+#                 stack.pop()
+#
+#         return len(stack) == 0
+
+names = []
+print("Enter the number of studens you want to add to the record")
+no = int(input())
+for i in range(no):
+    print("Enter the name of the student to be added ")
+    name = input()
+    names.append(name)
+    print("Record added succesfully")
+
+print("Enter the name of student you want to search ")
+name_search = input()
+if name_search in names:
+    print ("Yes it is present")
+else:
+    print ("The person is not present")
+
+print (names)
+print("Enter the name of the student you want to delete from the list")
+del_name = input()
+if del_name in names:
+    del names[del_name]
+    print('The updated list is ')
+    print(names)
+
 
