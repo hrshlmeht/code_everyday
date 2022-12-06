@@ -560,3 +560,10 @@ import sys
 #
 # roll_no =  enumerate((names) , 1)
 # print(list(roll_no))
+
+# word = 'My name is Harshal Sanjay Mehta'
+# for i in range(len(word)):
+#     print (' '*i, word[i])
+
+
+
