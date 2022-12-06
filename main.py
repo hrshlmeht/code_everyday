@@ -565,5 +565,34 @@ import sys
 # for i in range(len(word)):
 #     print (' '*i, word[i])
 
+# print("Enter the number of students")
+# number = int(input())
+# students = []
+# for i in range(number):
+#     print('Enter the name of the student')
+#     name = input()
+#     students.append(name)
+#
+#
+# print(students)
+# print("Enter the surnames of the students")
+#
+# surname =[]
+# print("Enter the surname of the students")
+# for i in range(number):
+#     sname = input()
+#     surname.append(sname)
+#
+# print(surname)
+#
+# print("Merging two strings")
+# i = 0
+# print(students,surname)
+# for i in range(number):
+#     students[i]=students[i]+" "+ surname[i]
+#
+# print(students)
+
+
 
 
