@@ -594,5 +594,23 @@ import sys
 # print(students)
 
 
-
+#meet = ['harhshal Mehta' ,'polo'][::-1]
+#leetcdoe solution for finding the index
+# class Solution:
+#     def searchInsert(self, nums: List[int], target: int) -> int:
+#         # end_num = len(nums)
+#
+#         # for start_num in range(end_num):
+#         #     if target == nums[start_num]:
+#         #         return start_num
+#         #     else:
+#         #         start_num = start_num + 1
+#         # return start_num
+#
+#         if target in nums:
+#             return nums.index(target)
+#         else:
+#             nums.append(target)
+#             nums.sort()
+#         return nums.index(target)
 
