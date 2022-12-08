@@ -614,3 +614,17 @@ import sys
 #             nums.sort()
 #         return nums.index(target)
 
+
+#leetcode problem for deleting duplicate emails
+# sql queery for deleting duplicate emaails =
+# delete
+# p2
+# from Person p1
+#
+# JOIN
+# person
+# p2
+# ON
+# p1.email = p2.email
+# and p1.id < p2.id
+
