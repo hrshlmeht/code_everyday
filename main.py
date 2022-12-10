@@ -388,8 +388,8 @@ from requests import get
 # BASE_URL = "https://data.nba.net"
 # ALL_JSON = "/prod/v1/today.json"
 # printer = PrettyPrinter()
-#data = get(BASE_URL + ALL_JSON).json()
-#printer.pprint(data)
+# data = get(BASE_URL + ALL_JSON).json()
+# printer.pprint(data)
 
 # def get_links():
 #     data = get(BASE_URL + ALL_JSON).json()
@@ -452,7 +452,7 @@ import random
 import re
 import sys
 
-#hackerrank camel case problem
+# hackerrank camel case problem
 #
 # Complete the 'camelcase' function below.
 #
@@ -481,7 +481,7 @@ import sys
 #
 #     fptr.close()
 
-#leetcode remove element
+# leetcode remove element
 # class Solution:
 #     def removeElement(self, nums: List[int], val: int) -> int:
 #         i = 0
@@ -491,7 +491,7 @@ import sys
 #                 i += 1
 #         return i
 #
-#Leetcode for parentheses checkk not working
+# Leetcode for parentheses checkk not working
 # s = ['(())']
 # class Solution:
 #     def isValid(self, s: str) -> str:
@@ -510,7 +510,7 @@ import sys
 #             print ('True')
 #         else:
 #             print ('False')
-#leetcdoe for parentheses working
+# leetcdoe for parentheses working
 # class Solution:
 #     def isValid(self, s: str) -> bool:
 #         stack = []
@@ -530,7 +530,6 @@ import sys
 #                 stack.pop()
 #
 #         return len(stack) == 0
-
 
 
 # names = []
@@ -594,8 +593,8 @@ import sys
 # print(students)
 
 
-#meet = ['harhshal Mehta' ,'polo'][::-1]
-#leetcdoe solution for finding the index
+# meet = ['harhshal Mehta' ,'polo'][::-1]
+# leetcdoe solution for finding the index
 # class Solution:
 #     def searchInsert(self, nums: List[int], target: int) -> int:
 #         # end_num = len(nums)
@@ -615,7 +614,7 @@ import sys
 #         return nums.index(target)
 
 
-#leetcode problem for deleting duplicate emails
+# leetcode problem for deleting duplicate emails
 # sql queery for deleting duplicate emaails =
 # delete
 # p2
@@ -634,18 +633,25 @@ API_KEY = '7dc769f16b1b0ef349b0'
 
 printer = PrettyPrinter()
 
+
 def get_currencies():
     endpoint = f"api/v7/currencies?apiKey={API_KEY}"
     url = BASE_URL + endpoint
-    data = get(url).json()
+    data = get(url).json()['results']
+    data = list(data.items())
+    data.sort()
 
-    printer.pprint(data)
-
-get_currencies()
-
-
+    return data
 
 
+def print_currencies(currencies):
+    for name, currency in currencies:
+        name = currency['currencyName']
+        _id = currency['id']
+
+        symbol = currency.get('currencySymbol', '')
+        print(f"{_id} - {name} - {symbol}")
 
 
-
+data = get_currencies()
+print_currencies(data)
