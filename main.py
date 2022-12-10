@@ -382,7 +382,7 @@
 
 ###get the data from the link - https://data.nba.net/prod/v1/today.json (open API)
 
-# from requests import get
+from requests import get
 # from pprint import PrettyPrinter
 #
 # BASE_URL = "https://data.nba.net"
@@ -627,4 +627,25 @@ import sys
 # ON
 # p1.email = p2.email
 # and p1.id < p2.id
+from pprint import PrettyPrinter
+
+BASE_URL = "https://free.currconv.com/"
+API_KEY = '7dc769f16b1b0ef349b0'
+
+printer = PrettyPrinter()
+
+def get_currencies():
+    endpoint = f"api/v7/currencies?apiKey={API_KEY}"
+    url = BASE_URL + endpoint
+    data = get(url).json()
+
+    printer.pprint(data)
+
+get_currencies()
+
+
+
+
+
+
 
