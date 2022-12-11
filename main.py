@@ -720,7 +720,20 @@ import sys
 #
 # main()
 
+# name = "matol"
+# reverse_name = name[::-1]
+# print(reverse_name)
+#
+# if( name == reverse_name):
+#     print('this is palindrome')
 
+array =[1,2 ,2 ,3 ,3 ,33 ,3 ,3]
+print (len(array))
+for i in range(len(array)):
+    if array[0] == array[i]:
+        print("Yes the firdt value is 1")
+        if array[1] == array[i+1]:
+            print('Yes the array is having second number as 2')
 
 
 
