@@ -727,13 +727,36 @@ import sys
 # if( name == reverse_name):
 #     print('this is palindrome')
 
-array =[1,2 ,2 ,3 ,3 ,33 ,3 ,3]
-print (len(array))
-for i in range(len(array)):
-    if array[0] == array[i]:
-        print("Yes the firdt value is 1")
-        if array[1] == array[i+1]:
-            print('Yes the array is having second number as 2')
+# array =[1,2 ,2 ,3 ,3 ,33 ,3 ,3]
+# print (len(array))
+# for i in range(len(array)):
+#     if array[0] == array[i]:
+#         print("Yes the firdt value is 1")
+#         if array[1] == array[i+1]:
+#             print('Yes the array is having second number as 2')
+
+# arr = [2,2,2,2,2]
+#
+# arr.insert(0 , 4)
+#
+# print (arr)
+#
+# for i in arr:
+#     print (' is is tatti')
+#
+#
+# class Node:
+#     def __init__(self , data=None , next = None):
+#         self.data = data
+#         self.next = next
+#
+# class LinkedList:
+#     def __init__(self):
+#         self.head = None
+#
+#     def insert_at_head(self, data):
+#         node = Node(data , self.head)
+#         self.head = node
 
 
 
