@@ -778,24 +778,31 @@ import sys
 #     root.insert_at_head(12)
 #     root.print()
 
+#
+# def create_phone_number():
+#     print('Enter the number in the list')
+#     l = int(input())
+#     arr = []
+#     for i in range(l):
+#         print('Enter the numbers')
+#         num = int(input())
+#         arr.append(num)
+#
+#     print('(')
+#     for j in range(0,3):
+#         print(arr[j])
+#
+#     print(')')
+#
+#     for k in range(3 , 6):
+#         print(arr[k])
+#
+#     print('-')
+# create_phone_number()
 
-def create_phone_number():
-    print('Enter the number in the list')
-    l = int(input())
-    arr = []
-    for i in range(l):
-        print('Enter the numbers')
-        num = int(input())
-        arr.append(num)
-
-    print('(')
-    for j in range(0,3):
-        print(arr[j])
-
-    print(')')
-
-    for k in range(3 , 6):
-        print(arr[k])
-
-    print('-')
-create_phone_number()
+# import matplotlib as mpl
+# import matplotlib.pyplot as plt
+# import numpy as np
+#
+# fig, ax = plt.subplots()  # Create a figure containing a single axes.
+# ax.plot([1, 2, 3, 4], [1, 4, 2, 3]);  # Plot some data on the axes.
