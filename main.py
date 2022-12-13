@@ -806,3 +806,16 @@ import sys
 #
 # fig, ax = plt.subplots()  # Create a figure containing a single axes.
 # ax.plot([1, 2, 3, 4], [1, 4, 2, 3]);  # Plot some data on the axes.
+
+
+# int = 1234
+# count = 0
+# int_binary = bin(int)
+# print(int_binary)
+#
+# for i in int_binary:
+#        if i == '1':
+#            print('Entering the if condition')
+#            count = count + 1
+#
+# print(count)
