@@ -745,33 +745,57 @@ import sys
 #     print (' is is tatti')
 #
 #
-class Node:
-    def __init__(self , data=None , next = None):
-        self.data = data
-        self.next = next
+# class Node:
+#     def __init__(self , data=None , next = None):
+#         self.data = data
+#         self.next = next
+#
+# class LinkedList:
+#     def __init__(self):
+#         self.head = None
+#
+#     def insert_at_head(self, data):
+#         node = Node(data , self.head)
+#         self.head = node
+#
+#
+#     def print(self):
+#         itr = self.head
+#         llstr = ' '
+#         while itr:
+#
+#             if itr.next:
+#                 suffix = '---->'
+#             llstr += str(itr.data) + '--->'
+#             itr = itr.next
+#         print(llstr)
+#
+#
+# if __name__ == "__main__":
+#     print("Enter the number of elements to be insterted in the linked list")
+#     root = LinkedList()
+#     root.insert_at_head(5)
+#     root.insert_at_head(12)
+#     root.print()
 
-class LinkedList:
-    def __init__(self):
-        self.head = None
 
-    def insert_at_head(self, data):
-        node = Node(data , self.head)
-        self.head = node
+def create_phone_number():
+    print('Enter the number in the list')
+    l = int(input())
+    arr = []
+    for i in range(l):
+        print('Enter the numbers')
+        num = int(input())
+        arr.append(num)
 
+    print('(')
+    for j in range(0,3):
+        print(arr[j])
 
-    def print(self):
-        itr = self.head
-        llstr = ' '
-        while itr:
-            llstr += str(itr.data) + '--->'
-            itr = itr.next
-        print(llstr)
+    print(')')
 
+    for k in range(3 , 6):
+        print(arr[k])
 
-if __name__ == "__main__":
-    root = LinkedList()
-    root.insert_at_head(5)
-    root.insert_at_head(12)
-    root.print()
-
-
+    print('-')
+create_phone_number()
