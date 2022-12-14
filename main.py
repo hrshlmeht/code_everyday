@@ -819,3 +819,19 @@ import sys
 #            count = count + 1
 #
 # print(count)
+
+
+# print('name harshal')
+# integer = int(input())
+#
+# print(type(integer))
+
+
+def unique_in_order(iterable):
+    newList = []
+    for item in iterable:
+        if len(newList) < 1 or not item == newList[len(newList) - 1]:
+            newList.append(item)
+    print (newList)
+
+unique_in_order('AAAABBBCCDAABBB')
