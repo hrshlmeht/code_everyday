@@ -826,12 +826,27 @@ import sys
 #
 # print(type(integer))
 
+#
+# def unique_in_order(iterable):
+#     newList = []
+#     for item in iterable:
+#         if len(newList) < 1 or not item == newList[len(newList) - 1]:
+#             newList.append(item)
+#     print (newList)
+#
+# unique_in_order('AAAABBBCCDAABBB')
 
-def unique_in_order(iterable):
-    newList = []
-    for item in iterable:
-        if len(newList) < 1 or not item == newList[len(newList) - 1]:
-            newList.append(item)
-    print (newList)
-
-unique_in_order('AAAABBBCCDAABBB')
+#leetcode solution for house robber
+# class Solution(object):
+#     def rob(self, nums):
+#         robber_1 = 0
+#         robber_2 = 0
+#
+#         for i in nums:
+#             temp = max(robber_1 + i , robber_2)
+#             # print(robber_2)
+#             # print(robber_1)
+#             robber_1 = robber_2
+#             robber_2 = temp
+#
+#         return robber_2
