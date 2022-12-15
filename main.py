@@ -850,3 +850,47 @@ import sys
 #             robber_2 = temp
 #
 #         return robber_2
+
+# sorted_list = ['AAsim' , 'wakram' , 'chakram']
+#
+# sorted_list.sort()
+# print(sorted_list)
+#leetcode solution for finding length of the last word
+
+# class Solution:
+#     def lengthOfLastWord(self, s: str) -> int:
+#
+#         if (len(s) == 0):
+#             return 0
+#         s = s.strip() # remove the extra spaces at the end, which are unnecessary
+#         l = s.split(" ") # then split it so that we get a list of all the words in the string
+#         return len(l[-1])
+
+#leetcode for solution for duplicates
+
+# class Solution:
+#     def containsDuplicate(self, nums: List[int]) -> bool:
+#
+#         # i = len(nums)
+#         # if i <= 1:
+#         #     return False
+#         # for j in range(len(nums)):
+#         #     print(j)
+#         #     if nums[j] == nums[i-1]:
+#         #         print(i)
+#         #         return True
+#         #     else:
+#         #         i = i-1
+#
+#         # return False
+#
+#         HashSet = set()
+#
+#         for n in nums:
+#             if n in HashSet:
+#                 return True
+#             else:
+#                 HashSet.add(n)
+#
+
+
