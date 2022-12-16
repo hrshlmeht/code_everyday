@@ -913,3 +913,10 @@ import sys
 #         # for i in s:
 #         #     if
 
+#lol this solution works now
+# if len(s) == len(t):
+#     if sorted(s) == sorted(t):
+#         return True
+# else:
+#     return False
+
