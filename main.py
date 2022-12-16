@@ -892,5 +892,24 @@ import sys
 #             else:
 #                 HashSet.add(n)
 #
-
+#i have written this code but only 29/34 test cases are passing. Not sure why the rest arent
+# class Solution(object):
+#     def isAnagram(self, s, t):
+#         """
+#         :type s: str
+#         :type t: str
+#         :rtype: bool
+#         """
+#         test1 = set()
+#         test2 = set()
+#         for j in t:
+#             test1.add(j)
+#
+#         for i in s:
+#             test2.add(i)
+#
+#         if test1 == test2:
+#             return True
+#         # for i in s:
+#         #     if
 
