@@ -990,8 +990,8 @@ import sys
 #         return stack[0]
 
 #################### subsequence wala code (edge case not working ) and its findinga substring , nbeed to look at the locations################
-# t = 'abcda'
-# s = 'aabc'
+t = 'axbxcx'
+s = 'acb'
 # count = 0
 # for i in t:
 #     if i in s:
@@ -1002,3 +1002,22 @@ import sys
 #     print ('True')
 # else:
 #     print ('False')
+
+# count = 0
+## leetcode code working will all the acceptable test cases
+# i = 0
+# j = 0
+# while i < len(s) and j < len(t):
+#     if s[i] == t[j]:
+#         # count = count +1
+#         i = i +1
+#         j = j +1
+#     else :
+#         j = j +1
+#
+# if i == len(s):
+#     print(True)
+# else:
+#     print (False)
+#
+
