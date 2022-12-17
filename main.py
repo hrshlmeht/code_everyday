@@ -988,3 +988,17 @@ import sys
 #             else:
 #                 stack.append(int(char))
 #         return stack[0]
+
+#################### subsequence wala code (edge case not working ) and its findinga substring , nbeed to look at the locations################
+# t = 'abcda'
+# s = 'aabc'
+# count = 0
+# for i in t:
+#     if i in s:
+#         count = count + 1
+#     else:
+#         continue
+# if count == len(s):
+#     print ('True')
+# else:
+#     print ('False')
