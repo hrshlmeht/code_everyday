@@ -990,8 +990,8 @@ import sys
 #         return stack[0]
 
 #################### subsequence wala code (edge case not working ) and its findinga substring , nbeed to look at the locations################
-t = 'axbxcx'
-s = 'acb'
+# t = 'axbxcx'
+# s = 'acb'
 # count = 0
 # for i in t:
 #     if i in s:
@@ -1019,5 +1019,27 @@ s = 'acb'
 #     print(True)
 # else:
 #     print (False)
-#
 
+
+#################leetcdoe code of adding 1 to the last element################
+# class Solution(object):
+#     def plusOne(self, digits):
+#         """
+#         :type digits: List[int]
+#         :rtype: List[int]
+#         """
+#         digits = digits[::-1]
+#         one , i = 1 , 0
+#
+#         while one:
+#             if i< len(digits):
+#                 if digits[i] == 9:
+#                     digits[i] =0
+#                 else:
+#                     digits[i] += 1
+#                     one = 0
+#             else:
+#                 digits.append(1)
+#                 one = 0
+#             i += 1
+#         return digits[::-1]
