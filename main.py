@@ -1043,3 +1043,22 @@ import sys
 #                 one = 0
 #             i += 1
 #         return digits[::-1]
+
+#LEETCODE SOLUTION FOR FINDING THE  longest prefix SUBSTRING
+# class Solution(object):
+#     def longestCommonPrefix(self, strs):
+#         """
+#         :type strs: List[str]
+#         :rtype: str
+#         """
+#         res = ""  # return this if nothing is in common
+#
+#         for i in range(len(strs[0])):  # explicitly first
+#             for s in strs:
+#                 if i == len(s) or s[i] != strs[0][i]:
+#                     return res
+#             res += strs[0][i]
+#
+#         return res
+
+
