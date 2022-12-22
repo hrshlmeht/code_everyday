@@ -1096,3 +1096,20 @@ import sys
 #                 row.append(temp[j]+ temp[j +1])
 #             res.append(row)
 #         return res
+
+############Leetcode - Remove an element ############################
+# class Solution(object):
+#     def removeElement(self, nums, val):
+#         """
+#         :type nums: List[int]
+#         :type val: int
+#         :rtype: int
+#         """
+#
+#         count = 0
+#         for i in range(len(nums)):
+#             if val != nums[i]:
+#                 nums[count] = nums[i]
+#                 count += 1
+#         return count
+
