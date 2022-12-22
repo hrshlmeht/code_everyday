@@ -1112,4 +1112,19 @@ import sys
 #                 nums[count] = nums[i]
 #                 count += 1
 #         return count
-
+#####################finding unique emails in the entered string array - using built in funnctions
+# class Solution(object):
+#     def numUniqueEmails(self, emails):
+#         """
+#         :type emails: List[str]
+#         :rtype: int
+#         """
+#         distinct = set()
+#
+#         for e in emails:
+#             localname , domainname = e.split('@')
+#             localname = localname.split('+')[0]
+#             localname = localname.replace('.', "")
+#             distinct.add((localname , domainname))
+#         print(distinct)
+#         return len(distinct)
