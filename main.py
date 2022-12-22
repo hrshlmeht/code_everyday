@@ -1128,3 +1128,24 @@ import sys
 #             distinct.add((localname , domainname))
 #         print(distinct)
 #         return len(distinct)
+################################################leetcode solution for Isomorphic strings #########################
+# class Solution(object):
+#     def isIsomorphic(self, s, t):
+#         """
+#         :type s: str
+#         :type t: str
+#         :rtype: bool
+#         """
+#         mapStoT = {}
+#         mapTtoS = {}
+#         for i in range(len(s)):
+#             char1 = s[i]
+#             char2 = t[i]
+#             if ((char1 in mapStoT and mapStoT[char1]!= char2) or
+#                 (char2 in mapTtoS and mapTtoS[char2]!= char1)):
+#                 return False
+#             mapStoT[char1] = char2
+#             mapTtoS[char2] = char1
+#         return True
+
+
