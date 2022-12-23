@@ -1178,3 +1178,37 @@ import sys
         #         else:
         #             count+= 1
         #           #  print (count)
+
+
+###############################################Majority Element#################################
+# class Solution(object):
+#     def majorityElement(self, nums):
+#         """
+#         :type nums: List[int]
+#         :rtype: int
+#         """
+#
+#         # j1 = 1
+#         # for i in range(len(nums)):
+#         #     if nums[j1] == nums[i]:
+#         #         j1 += 1
+#         #         print ('Yolo')
+#         #         print (nums[i])
+#         #         print(j1)
+#
+#         # if j1 > (len(nums)/2):
+#         #     return j1
+#
+#         count = {}
+#         maxCount = 0
+#
+#         for n in nums:
+#             count[n] = 1 + count.get(n, 1)
+#             if count[n] > maxCount:
+#                 res = n
+#             else:
+#                 continue
+#             maxCount = max(maxCount, count[n])
+#
+#         return res
+#
