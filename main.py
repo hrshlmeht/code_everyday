@@ -1235,3 +1235,40 @@ import sys
 #
 #         return res
 
+#####################PIVOT INDEX############################################
+# class Solution(object):
+#     def pivotIndex(self, nums):
+#         """
+#         :type nums: List[int]
+#         :rtype: int
+#         """
+#         total = sum(nums)
+#         lsum = 0
+#         rsum = 0
+#         for i in range(len(nums)):
+#             rsum = total - nums[i] - lsum
+#             print(rsum)
+#             if rsum == lsum:
+#                 return i
+#             lsum = lsum + nums[i]
+#
+#         return -1
+
+#########
+# def findDisappearedNumbers(self, nums):
+#     """
+#     :type nums: List[int]
+#     :rtype: List[int]
+#     """
+#     returnList = []
+#     n = len(nums)
+#     nums = set(sorted(nums))
+#     print(nums)
+#     # print(nums)
+#     for i in range(1, n):
+#         if i not in nums:
+#             returnList.append(i)
+#
+#     return returnList
+
+
