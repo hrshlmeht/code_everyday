@@ -1271,4 +1271,21 @@ import sys
 #
 #     return returnList
 
-
+#########################Number of balloons######################
+# class Solution(object):
+#     def maxNumberOfBalloons(self, text):
+#         """
+#         :type text: str
+#         :rtype: int
+#         """
+#         Hashmap = Counter(text)
+#         HashmapOG = Counter("balloon")
+#         res = len(text)
+#         print(Hashmap)
+#         print(HashmapOG)
+#
+#         for i in HashmapOG:
+#             res = min(res, Hashmap[i] // HashmapOG[i])
+#
+#         return res
+#
