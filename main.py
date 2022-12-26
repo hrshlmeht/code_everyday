@@ -1289,3 +1289,28 @@ import sys
 #
 #         return res
 #
+#############################Solution to - Word Pattern 1 - Leetcode###############################
+# class Solution(object):
+#     def wordPattern(self, pattern, s):
+#         """
+#         :type pattern: str
+#         :type s: str
+#         :rtype: bool
+#         """
+#
+#         words = s.split()
+#         if len(words) != len(pattern):
+#             return False
+#
+#         WordsToChar = {}
+#         charToWords = {}
+#
+#         for c, w in zip(pattern, words):
+#             if c in charToWords and charToWords[c] != w:
+#                 return False
+#             if w in WordsToChar and WordsToChar[w] != c:
+#                 return False
+#             charToWords[c] = w
+#             WordsToChar[w] = c
+#
+#         return True
