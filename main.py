@@ -1329,13 +1329,54 @@ import sys
 #
 #         for n in nums:
 #             count[n] = 1 + count.get(n, 0)
+
 #
 #         for n, c in count.items():
 #             freq[c].append(n)
-#
+
+#         print (count)
+#         print (freq)
 #         res = []
 #         for i in range(len(freq) - 1, 0, -1):
 #             for n in freq[i]:
 #                 res.append(n)
 #                 if len(res) == k:
-#                     return res
+#                     print (res)
+# func = Solution()
+# func.topKFrequent([1,2,2,2,2,2,2,3,3,3,4,5,6,6,6,6,6,6,6] ,1)
+#
+#
+# nums = {1: "Keval" , 2 : "Harshal" , 3 : 'Meet'}
+# array = [[1 ,2 ,3 ], [4 ,5 ,6 ], [7 ,8 ,9 ]]
+# nums2={}
+#
+# j=0
+# for i in nums:
+#     nums[i]=array[j]
+#     j+=1
+# j=0
+# for i in list(nums):
+#     nums2[i+1]=array[j]
+#     j+=1
+#
+# # nums[i].replace(nums[i] , "This is updated")
+# print(nums2)
+
+###############Single Number##################################################################################################################################
+# class Solution(object):
+#     def singleNumber(self, nums):
+#         """
+#         :type nums: List[int]
+#         :rtype: int
+#         """
+#         hashmap = {}
+#         for  i  in range(len(nums)):
+#             if nums[i] not in hashmap:
+#                 hashmap[nums[i]]=1
+#             else:
+#                 hashmap[nums[i]]=hashmap[nums[i]]+1
+#         for i in hashmap:
+#             if hashmap[i]==1:
+#                 return i
+#
+#
