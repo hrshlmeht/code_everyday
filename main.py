@@ -1398,4 +1398,25 @@ import sys
 #         return False
 #
 
+##############################Contains Duplicate 2################################# (optimal view)
+# class Solution(object):
+#     def containsNearbyDuplicate(self, nums, k):
+#         """
+#         :type nums: List[int]
+#         :type k: int
+#         :rtype: bool
+#         """
+#         Hashmap = {}
+#         for index, key in enumerate(nums):
+#             if (key in Hashmap and index - Hashmap[key] <= k):
+#                 return True
+#
+#             Hashmap[key] = index
+#
+#         return False
+#
+#
+
+
+
 
