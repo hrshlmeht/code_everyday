@@ -1380,3 +1380,22 @@ import sys
 #                 return i
 #
 #
+########################################Contains Duplicate 2#############################
+# class Solution(object):
+#     def containsNearbyDuplicate(self, nums, k):
+#         """
+#         :type nums: List[int]
+#         :type k: int
+#         :rtype: bool
+#         """
+#         for i in range(len(nums)):
+#             for j in range(len(nums)):
+#                 if (i == j):
+#                     continue
+#                 if nums[i] == nums[j] and abs(i - j) <= k:
+#                     return True
+#
+#         return False
+#
+
+
