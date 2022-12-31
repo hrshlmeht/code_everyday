@@ -1419,4 +1419,19 @@ import sys
 
 
 
-
+###################contains duplicate revised##################################
+# class Solution(object):
+#     def containsDuplicate(self, nums):
+#         """
+#         :type nums: List[int]
+#         :rtype: bool
+#         """
+#
+#         numspro = set()
+#         for i in range(len(nums)):
+#             numspro.add(nums[i])
+#
+#         if len(nums) == len(numspro):
+#             return False
+#
+#         return True
