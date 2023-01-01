@@ -1435,3 +1435,23 @@ import sys
 #             return False
 #
 #         return True
+#######valid anagram###################
+# import defaultdict from collections
+# d = defaultdict()
+#     for i in s:
+#         if i in d:
+#                 d[i] +=1
+#             else:
+#                 d[i] = 1
+#
+#         for i in t:
+#             if i in t:
+#                 d[i] = d[i] - 1
+#             else:
+#                 d[i]=1
+#         for i in d:
+#             if d[i] > 0:
+#                 return False
+#
+#         return True
+
