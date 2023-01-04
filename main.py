@@ -1523,3 +1523,26 @@ import sys
 #             else:
 #                 res += freq // 2
 #         return res
+
+#######################adding binary problem##########################
+# class Solution:
+#     def addBinary(self, a: str, b: str) -> str:
+#         a = list(a)
+#         b = list(b)
+#         carry = 0
+#         result = ''
+#
+#         while a or b or carry:
+#             if a:
+#                 carry += int(a.pop())
+#                 print(carry)
+#             if b:
+#                 carry += int(b.pop())
+#                 print(carry)
+#
+#             result += str(carry % 2)
+#             carry //= 2
+#             print(carry)
+#
+#         print(result)
+#         return result[::-1]
