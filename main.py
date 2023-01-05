@@ -1546,3 +1546,22 @@ import sys
 #
 #         print(result)
 #         return result[::-1]
+
+
+########################leetcode daily problem (solution not working)#####################
+# class Solution:
+#     def findMinArrowShots(self, points: List[List[int]]) -> int:
+#         array = []
+#         for i in range(len(points)):
+#             # print(len(points[i]))
+#             for j in range(len(points[i]) - 1):
+#                 array.append(abs(points[i][j] - points[i][j + 1]))
+#
+#         print(array)
+#         count = 0
+#         for i in range(len(array) - 1):
+#             if array[i] <= array[i + 1]:
+#                 count += 1
+#
+#         print(count)
+#         return count
