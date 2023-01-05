@@ -1565,3 +1565,17 @@ import sys
 #
 #         print(count)
 #         return count
+##################################leetcode daily problem#################### working solution
+# class Solution:
+#     def findMinArrowShots(self, points: List[List[int]]) -> int:
+#         points = sorted(points, key=lambda x: x[1])
+#         count = 0
+#         ending = float('-inf')
+#
+#         for balloon in points:
+#             if balloon[0] > ending:
+#                 count += 1
+#                 ending = balloon[1]
+#
+#         return count
+##########################
