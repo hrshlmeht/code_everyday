@@ -1618,6 +1618,44 @@ import sys
 #
 #         # If the number is not a perfect square, return the value "end"
 #         return end
+#leetcode my solution working#### medium
+# class Solution:
+#     def maxIceCream(self, costs: List[int], coins: int) -> int:
+#         costs = sorted(costs)
+#         num = 0
+#         print(costs)
+#         for i in costs:
+#             if i <= coins:
+#                 coins = coins - i
+#                 num = num + 1
+#                 print(num)
+#
+#         return num
 
+################leetcode gas station##########################
+# class Solution:
+#     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+#         if sum(gas) < sum(cost):
+#             return -1
+#
+#         res = 0
+#         total = 0
+#         for i in range(len(cost)):
+#             total = total + (gas[i] - cost[i])
+#
+#             if total < 0:
+#                 total = 0
+#                 res = i + 1
+#
+#         return res
+# #         n, total_surplus, surplus, start = len(gas), 0, 0, 0
+#
+# #         for i in range(n):
+# #             total_surplus += gas[i] - cost[i]
+# #             surplus += gas[i] - cost[i]
+# #             if surplus < 0:
+# #                 surplus = 0
+# #                 start = i + 1
+# #         return -1 if (total_surplus < 0) else start
 
 
