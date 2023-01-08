@@ -1657,5 +1657,64 @@ import sys
 # #                 surplus = 0
 # #                 start = i + 1
 # #         return -1 if (total_surplus < 0) else start
+##########################################################################matrix multiplication to understand how a 2d array works##########
+# print('Entet the number of rows')
+# num_rows = int(input())
+# row = []
+# for  i in range(num_rows):
+#     print (f"Enter the number of elements in  row:")
+#     element = int(input())
+#     row.append(element)
+#
+# print('Entet the number of cols')
+# num_col = int(input())
+# matrix = [[]]
+# for  i in range(num_col):
+#     print (f"Enter the number of elements in  row:")
+#     element = int(input())
+#     matrix.append[i[element]]
+#
+# print (matrix)
+##############################################valid soduku algorithm#####################
+# class Solution:
+#     def isValidSudoku(self, board: List[List[str]]) -> bool:
+#         columns = collections.defaultdict(set)
+#         rows = collections.defaultdict(set)
+#         sqaure = collections.defaultdict(set)
+#
+#         for r in range(9):
+#             for c in range(9):
+#                 if board[r][c] == ".":
+#                     continue
+#                 if (board[r][c] in columns[c] or board[r][c] in rows[r] or board[r][c] in sqaure[(r // 3, c // 3)]):
+#                     return False
+#                 columns[c].add(board[r][c])
+#                 rows[r].add(board[r][c])
+#                 sqaure[(r // 3, c // 3)].add(board[r][c])
+#         print(columns)
+#         print(rows)
+#         print(sqaure)
+#
+#         return True
+#
+#         ##accessing the rows
+#
+#         # for i in range(len(board)):
+#         #     for j in range(len(board)-1):
+#         #         if board[i][j] == board[i][j+1]:
+#         #             return False
+#         #         if board[j][i] == '.' or board[j][i] <= '9':
+#         #             return True
+#
+#         ##accessing the columns
+#
+#         # for i in range(len(board)):
+#         #     for j in range(len(board)-1):
+#         #         if board[j][i] == board[j+1][i]:
+#         #             return False
+#         #         if board[j][i] == '.' or board[j][i] <= '9':
+#         #             return True
+
+
 
 
