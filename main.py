@@ -1696,7 +1696,7 @@ import sys
 #         print(sqaure)
 #
 #         return True
-#
+######################the cdoe which is not working###############
 #         ##accessing the rows
 #
 #         # for i in range(len(board)):
@@ -1715,6 +1715,23 @@ import sys
 #         #         if board[j][i] == '.' or board[j][i] <= '9':
 #         #             return True
 
+#####################Longest Consequetive Sequence#####################
+# class Solution:
+#     def longestConsecutive(self, nums: List[int]) -> int:
+#
+#         if len(nums) == 0:
+#             return 0
+#
+#         numpro = sorted(nums)
+#         print(numpro)
+#         count = 1
+#         for i in range(len(numpro) - 1):
+#             print(numpro[i])
+#             print(numpro[i] + 1)
+#             if numpro[i] + 1 == numpro[i + 1]:
+#                 count += 1
+#
+#         return count
 
 
 
