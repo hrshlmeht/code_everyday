@@ -1732,6 +1732,17 @@ import sys
 #                 count += 1
 #
 #         return count
+###############################################################two sum revision#########
+# nums = [3,6,7,8,9,10 ]
+# target =  10
+#
+# for i in range(len(nums)):
+#     for j in range(1 , len(nums)):
+#         if nums[i] == target-nums[j]:
+#             print(i , j )
+
+
+
 
 
 
