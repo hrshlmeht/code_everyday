@@ -1754,3 +1754,19 @@ import sys
 #                 if nums[i] > nums[j]:
 #                     nums[i], nums[j] = nums[j], nums[i]
 #         print(nums)
+
+#######leetcode for finding the sqaure of the array and sort it #ew
+# class Solution(object):
+#     def sortedSquares(self, nums):
+#         """
+#         :type nums: List[int]
+#         :rtype: List[int]
+#         """
+#
+#         nums1 = []
+#
+#         for i in range(len(nums)):
+#             nums1.append((nums[i]) * (nums[i]))
+#
+#         return sorted(nums1)
+#
