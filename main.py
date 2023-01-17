@@ -2382,3 +2382,25 @@ import sys
 #
 # document.addEventListener('DOMContentLoaded', run);
 
+
+##################leetcoe converting an to integer#########My solution working only for 1 test case
+# class Solution(object):
+#     def myAtoi(self, s):
+#         """
+#         :type s: str
+#         :rtype: int
+#         """
+#         yolo = []
+#         for i in s:
+#             if i == ' ' or i == '_' or i == '-' or i == '.':
+#                 print('If satisfied')
+#                 continue
+#             else:
+#                 yolo.append(i)
+#                 print('Else satisdie')
+#
+#         data = ''
+#         for i in yolo:
+#             data += i
+#
+#         return (int(data))
