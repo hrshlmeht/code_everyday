@@ -2482,3 +2482,5 @@ import sys
 #
 #         return ('')
 #
+
+################YOU CANNNNNNOT DO THE ARRAY MANIPULATION TECHNIQUES WITHOUT IMPORTING ARRAY * #######################
