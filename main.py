@@ -2468,3 +2468,17 @@ import sys
 #                     return i
 #
 #         return -1
+
+#######################Finding first palindromic string in an array##################
+# class Solution:
+#     def firstPalindrome(self, words: List[str]) -> str:
+#         ans = 0
+#
+#         for i in words:
+#             if i == i[::-1]:
+#                 return i
+#             elif i != i[::-1]:
+#                 continue
+#
+#         return ('')
+#
