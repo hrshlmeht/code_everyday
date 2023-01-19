@@ -2532,3 +2532,36 @@ import sys
 #                 right -= 1
 #
 #         return res
+#
+# print('Enter your date of birth')
+# dob = input()
+# nums =[]
+# for i in dob:
+#     j = int(i)
+#     nums.append(j)
+# ans = 0
+# for z in range(len(nums)):
+#     ans = ans+ nums[z]
+#
+# ans = ans%10
+# ans = ans + ans
+# print(ans)
+
+############leetcode buying and selling a stock############
+# class Solution(object):
+#     def maxProfit(self, prices):
+#
+#         if len(prices) == 0:
+#             return 0
+#
+#         max = prices[len(prices) - 1]
+#         profit = 0
+#
+#         for item in prices[::-1]:
+#             if max - item > profit:
+#                 profit = max - item
+#             if item > max:
+#                 max = item
+#
+#         return profit
+#
