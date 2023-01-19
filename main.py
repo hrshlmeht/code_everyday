@@ -2499,3 +2499,18 @@ import sys
 #                     ans = max(ans, 0)
 #
 #         return (ans)
+
+
+#############right brute force approach###################
+# class Solution:
+#     def maxArea(self, height: List[int]) -> int:
+#
+#         result = 0
+#
+#         for left in range(len(height)):
+#             for right in range(left + 1, len(height)):
+#                 area = (right - left) * min(height[left], height[right])
+#                 result = max(result, area)
+#
+#         return result
+
