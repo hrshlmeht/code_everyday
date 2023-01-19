@@ -2484,3 +2484,18 @@ import sys
 #
 
 ################YOU CANNNNNNOT DO THE ARRAY MANIPULATION TECHNIQUES WITHOUT IMPORTING ARRAY * #######################
+
+######################CONTAINER WITH MOST WATER########################################################## (Passing 4 twst cases out of the 16) {my solution}
+# class Solution:
+#     def maxArea(self, height: List[int]) -> int:
+#
+#         for i in range(len(height)):
+#             for j in range(i + 1, len(height) + 1):
+#                 print(f'This is ith height {height[i]}')
+#                 print(f'This is jth height {height[j - 1]}')
+#                 if i < len(height) and j < len(height):
+#                     ans = max(((height[i] * height[j - i]) * (j - i)), ((height[i] * height[j]) * (j - i)))
+#                 else:
+#                     ans = max(ans, 0)
+#
+#         return (ans)
