@@ -2565,3 +2565,29 @@ import sys
 #
 #         return profit
 #
+###############leetcode problem 39 - combination sum############# solution is working only for the example test cases
+ # class Solution:
+#     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+#
+#         num = []
+#
+#         for i in range(len(candidates)):
+#             if candidates[i] == target:
+#                 num.append(candidates[i])
+#                 continue
+#             for j in range(1, len(candidates)):
+#                 if candidates[i] + candidates[j] < target:
+#                     print('first if executed')
+#                     sub = target - (candidates[i] + candidates[j])
+#                     if sub in candidates:
+#                         print('if ke andar if executed')
+#                         num.append(sub)
+#                         num.append(candidates[i])
+#                         num.append(candidates[j])
+#                     else:
+#                         print('else executed')
+#                         continue
+#
+#         candidates.append(num)
+#         print(candidates)
+
