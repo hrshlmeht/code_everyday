@@ -2612,3 +2612,27 @@ import sys
 #         return result
 
 
+########Make array zero by subtracting the elements###################
+# class Solution:
+#     def minimumOperations(self, nums: List[int]) -> int:
+#         nums = set(nums)
+#         if 0 in nums:
+#             return(len(nums)-1)
+#         else:
+#             return(len(nums))
+
+############minimum path sum#################
+# class Solution:
+#     def minPathSum(self, grid: List[List[int]]) -> int:
+#         m = len(grid)
+#         n = len(grid[0])
+#         for i in range(m):
+#             for j in range(n):
+#                 if i == 0 and j != 0:
+#                     grid[i][j] = grid[i][j] + grid[i][j - 1]
+#                 elif i != 0 and j == 0:
+#                     grid[i][j] = grid[i][j] + grid[i - 1][j];
+#                 elif i > 0 and j > 0:
+#                     grid[i][j] = min(grid[i][j - 1], grid[i - 1][j]) + grid[i][j]
+#
+#         return grid[m - 1][n - 1]
