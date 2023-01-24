@@ -2636,3 +2636,17 @@ import sys
 #                     grid[i][j] = min(grid[i][j - 1], grid[i - 1][j]) + grid[i][j]
 #
 #         return grid[m - 1][n - 1]
+# class Solution: (first solution passsing 57 test cases)
+#     def twoSum(self, nums: List[int], target: int) -> List[int]:
+#         for i in range(len(nums)):
+#             complement = target - nums[i]
+#             if complement in nums:
+#                 return [i, nums.index(complement)]
+#solution passing all the test cases
+        # hashmap = {}
+        # for i in range(len(nums)):
+        #     complement = target - nums[i]
+        #     if complement in hashmap:
+        #         return [i, hashmap[complement]]
+        #     hashmap[nums[i]] = i
+
