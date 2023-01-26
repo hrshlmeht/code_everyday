@@ -2649,4 +2649,20 @@ import sys
         #     if complement in hashmap:
         #         return [i, hashmap[complement]]
         #     hashmap[nums[i]] = i
+###########word search - my code which is not working##########################
+#m = len(board)
+#         n = len(board[0])
+# #         wordlist = []
+# #         for i in word:
+# #             wordlist.append(i)
 
+# #         print(wordlist)
+#         count =0
+#         for i in range(m):
+#             for j in range(n):
+#               #  print(board[i][j])
+#                 if board[i][j] in word and (board[i][j-1] or board[i-1][j] or board[i-1][j-1] or board[i+1][j+1] in word):
+#                         count+=1
+#                         print(count)
+#                 else:
+#                     print('else executed')
