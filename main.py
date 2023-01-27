@@ -2719,4 +2719,19 @@ import sys
 #             nums.append(0)
 #
 
-
+########Brickwall solution#####################
+# class Solution:
+#     def leastBricks(self, wall: List[List[int]]) -> int:
+#         edge_count = {}
+#         for row in wall:
+#             width = 0
+#             for brick in row[:-1]:
+#                 width += brick
+#                 if width in edge_count:
+#                     edge_count[width] += 1
+#                 else:
+#                     edge_count[width] = 1
+#         if not edge_count:
+#             return len(wall)
+#
+#         return len(wall) - max(edge_count.values())
