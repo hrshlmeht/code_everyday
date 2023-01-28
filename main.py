@@ -2735,3 +2735,24 @@ import sys
 #             return len(wall)
 #
 #         return len(wall) - max(edge_count.values())
+
+###############slowest key#################
+# class Solution:
+#     def slowestKey(self, releaseTimes: List[int], keysPressed: str) -> str:
+#
+#         max_ans = releaseTimes[0]
+#         ans = 0
+#         char = keysPressed[0]
+#         for i in range(1, len(releaseTimes)):
+#             ans = releaseTimes[i] - releaseTimes[i - 1]
+#             print(ans, keysPressed[i])
+#             if ans >= max_ans:
+#                 if ans == max_ans:
+#                     if ord(char) < ord(keysPressed[i]):
+#                         char = keysPressed[i]
+#                         print(char)
+#                 else:
+#                     char = keysPressed[i]
+#                 max_ans = ans
+#
+#         return char
