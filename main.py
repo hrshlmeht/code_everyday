@@ -2829,3 +2829,34 @@ import sys
 #         output = set(output)
 #
 #         return output
+
+
+#################finding the difference between the arrays##########
+# class Solution:
+#     def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
+#         set1 = set(nums1)
+#         set2 = set(nums2)
+#         ans = []
+#
+#         ans = [(set1 - set2), (set2 - set1)]
+#
+#         return ans
+#
+#         return
+    #         answer = [[]]
+#         for i in nums2:
+#             if i in nums1:
+#                 nums2.remove(i)
+#                 answer.append(nums2)
+
+
+#         for i in nums1:
+#             if i in nums2:
+#                 nums1.remove(i)
+#                 answer.append(nums1)
+#             else:
+#                 answer[0].append(i)
+#                 print (answer)
+
+
+#         return answer
