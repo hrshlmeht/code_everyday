@@ -2791,3 +2791,25 @@ import sys
 #         """
 #         return self.decodeMap[shortUrl]
 
+############leetcode - finding interesection of array#####################
+# class Solution(object):
+#     def intersect(self, nums1, nums2):
+#
+#         nums1, nums2 = sorted(nums1), sorted(nums2)
+#         pt1 = pt2 = 0
+#         output = []
+#
+#         while True:
+#             try:
+#                 if nums1[pt1] > nums2[pt2]:
+#                     pt2 += 1
+#                 elif nums1[pt1] < nums2[pt2]:
+#                     pt1 += 1
+#                 else:
+#                     output.append(nums1[pt1])
+#                     pt1 += 1
+#                     pt2 += 1
+#             except IndexError:
+#                 break
+#
+#         return output
