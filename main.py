@@ -2860,3 +2860,11 @@ import sys
 
 
 #         return answer
+
+#############concatenation of an array######## lol
+
+# class Solution:
+#     def getConcatenation(self, nums: List[int]) -> List[int]:
+#         ans = nums
+#         ans = ans + ans
+#         return ans
