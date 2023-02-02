@@ -2868,3 +2868,38 @@ import sys
 #         ans = nums
 #         ans = ans + ans
 #         return ans
+
+################leetcode Longest turbulent subarray####################
+# class Solution:
+#     def maxTurbulenceSize(self, arr: List[int]) -> int:
+#         ans = 0
+#         len_arr = 0
+#
+#         for i in range(len(arr)):
+#             if i >= 2 and (arr[i - 2] > arr[i - 1] < arr[i] or arr[i - 2] < arr[i - 1] > arr[i]):
+#                 len_arr += 1
+#             elif i >= 1 and arr[i - 1] != arr[i]:
+#                 len_arr = 2
+#             else:
+#                 len_arr = 1
+#             ans = max(len_arr, ans)
+#
+#         return ans
+##########My solution which passed 10 test cases
+#         count1 =  1
+#         count2 =  1
+#         count3 = 1
+
+#         for i in range(1  ,len(arr)-1):
+#             if (arr[i] > arr[i-1] and i%2 == 1) or (arr[i] < arr[i+1] and i%2 == 0 ):
+#                 count1 +=1
+#                 print (count1)
+#             elif (arr[i] > arr[i-1] and i%2 == 0) or (arr[i] < arr[i+1] and i%2 == 1 ):
+#                 count2 +=1
+#                 print(count2)
+#             elif(arr[i] == arr[i-1]) or (arr[i] == arr[i+1]):
+#                 break
+#             else:
+#                 continue
+
+#         return max( count2 , count1)
