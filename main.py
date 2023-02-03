@@ -2903,3 +2903,34 @@ import sys
 #                 continue
 
 #         return max( count2 , count1)
+
+
+############leetcode for finding the range#########################
+# class Solution:
+#     def summaryRanges(self, nums: List[int]) -> List[str]:
+#         l=list()
+#         j=0
+#         if(len(nums)==0):
+#             return nums
+#         if(len(nums)==1):
+#             y=nums[0]
+#             l.append(str(y))
+#             return l
+#         for i in range(1,len(nums)):
+#             if(nums[i]==nums[i-1]+1):
+#                 continue
+#             if(j==i-1):
+#                 x=f"{str(nums[j])}"
+#             else:
+#                 x=f"{str(nums[j])}->{str(nums[i-1])}"
+#             print(x)
+#             j=i
+#             l.append(x)
+#
+#         if(j==i):
+#             x=f"{(nums[i])}"
+#         else:
+#             x=(f"{str(nums[j])}->{str(nums[i])}")
+#         print(x)
+#         l.append(x)
+#         return l
