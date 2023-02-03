@@ -2934,3 +2934,21 @@ import sys
 #         print(x)
 #         l.append(x)
 #         return l
+
+
+############sort the people################## (my first sum using hashmap)
+# class Solution:
+#     def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+#
+#         hash_map = {}
+#         for i in range(len(names)):
+#             hash_map[heights[i]] = names[i]
+#
+#         print(hash_map)
+#
+#         ans = []
+#         heights.sort(reverse=True)
+#         for i in range(len(names)):
+#             ans.append(hash_map[heights[i]])
+#
+#         return ans
