@@ -2952,3 +2952,16 @@ import sys
 #             ans.append(hash_map[heights[i]])
 #
 #         return ans
+
+###########buy and sell stock part 2######################
+# class Solution:
+#     def maxProfit(self, prices: List[int]) -> int:
+#
+#         profit = []
+#         profitint = 0
+#
+#         for i in range(1, len(prices)):
+#             if prices[i] > prices[i - 1]:
+#                 profitint += prices[i] - prices[i - 1]
+#
+#         return profitint
