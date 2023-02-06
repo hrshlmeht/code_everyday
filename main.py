@@ -2976,3 +2976,21 @@ import sys
 #         weather w ON DATEDIFF(weather.recordDate , w.recordDate) =1
 #         and weather.Temperature > w.temperature
 #     ;
+
+
+##############final value of the variables adfter performing operations#########
+# class Solution:
+#     def finalValueAfterOperations(self, operations: List[str]) -> int:
+#
+#         x = 0
+#         for s in operations:
+#             if s == '++X' or s == 'X++':
+#                 x += 1
+#         print(x)
+#
+#         for s in operations:
+#             if s == '--X' or s == 'X--':
+#                 x = x - 1
+#                 print(x)
+#
+#         return x
