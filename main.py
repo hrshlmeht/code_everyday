@@ -2965,3 +2965,14 @@ import sys
 #                 profitint += prices[i] - prices[i - 1]
 #
 #         return profitint
+
+
+##SQL RISING TEMP QUERY
+# select
+#     weather.id as 'id'
+# from
+#     weather
+#     JOIN
+#         weather w ON DATEDIFF(weather.recordDate , w.recordDate) =1
+#         and weather.Temperature > w.temperature
+#     ;
