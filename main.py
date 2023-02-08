@@ -2994,3 +2994,26 @@ import sys
 #                 print(x)
 #
 #         return x
+
+########leets understand matrix operations###########
+from array import *
+arr1 = [[]]
+arr2 =[[]]
+
+print("Enter the number of the rows ")
+rows  = int(input())
+print("Enter the number of the cols")
+cols = int(input())
+ans = []
+for i in range(rows):
+    r = []
+    for j in range(cols):
+        r.append(int(input()))
+
+    ans.append(r)
+
+
+    print('\n')
+    print(ans)
+
+
