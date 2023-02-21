@@ -2996,24 +2996,31 @@ import sys
 #         return x
 
 ########leets understand matrix operations###########
-from array import *
-arr1 = [[]]
-arr2 =[[]]
+# from array import *
+# arr1 = [[]]
+# arr2 =[[]]
+#
+# print("Enter the number of the rows ")
+# rows  = int(input())
+# print("Enter the number of the cols")
+# cols = int(input())
+# ans = []
+# for i in range(rows):
+#     r = []
+#     for j in range(cols):
+#         r.append(int(input()))
+#
+#     ans.append(r)
+#
+#
+#     print('\n')
+#     print(ans)
 
-print("Enter the number of the rows ")
-rows  = int(input())
-print("Enter the number of the cols")
-cols = int(input())
-ans = []
-for i in range(rows):
-    r = []
-    for j in range(cols):
-        r.append(int(input()))
-
-    ans.append(r)
-
-
-    print('\n')
-    print(ans)
-
-
+####lol eetcode warm up adding of an array###########
+# class Solution:
+#     def addStrings(self, num1: str, num2: str) -> str:
+#         string = ''
+#
+#         string = int(num1) + int(num2)
+#
+#         return (str(string))
