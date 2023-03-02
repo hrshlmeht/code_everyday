@@ -2994,3 +2994,30 @@ import sys
 #                 print(x)
 #
 #         return x
+
+
+###########################Subarray sum = k sum leetcode############## {my solution not working)
+
+# class Solution:
+#     def subarraySum(self, nums: List[int], k: int) -> int:
+#         subarray = []
+#         var = 0
+#         ans = []
+#
+#         for i in range(len(nums)):
+#             if nums[i] < k:
+#                 for j in range(1, len(nums)):
+#                     while var < k:
+#                         var = nums[i] + nums[j]
+#                         if var == k:
+#                             subarray.append(nums[i])
+#                             subarray.append(nums[j])
+#                             break
+#                     subarray.append(nums[i])
+#                     subarray.append(nums[j])
+#                     ans.append(subarray)
+#
+#         print(ans)
+#         return len(ans)
+
+
