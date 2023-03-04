@@ -3035,3 +3035,30 @@ import sys
 #         return count
 #
 
+############leetcode - problem 3 paindromic strings###########
+# class Solution:
+#     def countPalindromicSubsequence(self, s: str) -> int:
+#         if len(s) < 3:
+#             return 0
+#
+#         elif len(s) == 3:
+#             return 1 if s[0] == s[2] else 0
+#
+#         else:
+#             num_of_palindromes = 0
+#             unique = list(set(s))
+#             # print(unique)
+#             for char in unique:
+#                 count = len(s)
+#                 print(count)
+#                 if count > 1:
+#                     # find first and last index of char in s
+#                     a_index = s.index(char)
+#                     c_index = s.rindex(char)
+#                     # print (a_index)
+#                     # print (c_index)
+#                     # find num of unique chars between the two indeces
+#                     between = s[a_index + 1:c_index]
+#                     num_of_palindromes += len(list(set(between)))
+#
+#             return num_of_palindromes
