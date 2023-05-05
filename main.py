@@ -3079,3 +3079,25 @@ import sys
 #                 print(num)
 #         return res
 #
+############leetcode after a long time####### Shuffle the array#######
+# class Solution:
+#     def shuffle(self, nums: List[int], n: int) -> List[int]:
+#
+#         nums2 = []
+#         ans = []
+#         m = len(nums) // 2
+#
+#         for i in range(m, len(nums)):
+#             nums2.append(nums[i])
+#
+#         print(nums2)
+#         print(len(nums2))
+#         for i in range(len(nums2)):
+#             ans.append(nums[i])
+#             ans.append(nums2[i])
+#
+#         #         for i in ( 1 , len(nums2)):
+#         #             ans.append(nums[i])
+#         #             ans.append(nums2[i])
+#
+#         return ans
