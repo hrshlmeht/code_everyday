@@ -3120,3 +3120,20 @@ import sys
 #
 #         return my_count
 
+#left and right sum differences######
+# class Solution:
+#     def leftRigthDifference(self, nums: List[int]) -> List[int]:
+#         l_sum = 0
+#         r_sum = sum(nums)
+#         ans = []
+#         for i in nums:
+#             l_sum = l_sum + i
+#             print(l_sum)
+#             ans.append(abs(r_sum - l_sum))
+#             r_sum = r_sum - i
+#             print(r_sum)
+#
+#         print(ans)
+#         return ans
+#
+#
