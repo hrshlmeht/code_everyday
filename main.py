@@ -3157,4 +3157,24 @@ import sys
 #
 #         print(ans)
 #         return max(ans)
+################number of maximum words in a sentence#########
+# class Solution:
+#     def mostWordsFound(self, sentences: List[str]) -> int:
+#         #         ans = []
+#         #         for i in sentences:
+#         #             ans.append(i.split())
+#
+#         #         print (ans)
+#         #         anspro = max(ans)
+#         #         print (anspro)
+#         #         var = len(anspro.split())
+#         #         print (var)
+#
+#         #         return var
+#
+#         m = 0
+#         for i in sentences:
+#             m = max(m, i.count(" ") + 1)
+#
+#         return m
 
