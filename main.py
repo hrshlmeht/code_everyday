@@ -3148,4 +3148,13 @@ import sys
 #
 #         print(ans)
 #         return ans
+############Richest Customer wealth problem######
+# class Solution:
+#     def maximumWealth(self, accounts: List[List[int]]) -> int:
+#         ans = []
+#         for i in accounts:
+#             ans.append(sum(i))
+#
+#         print(ans)
+#         return max(ans)
 
