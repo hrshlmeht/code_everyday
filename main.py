@@ -3177,4 +3177,18 @@ import sys
 #             m = max(m, i.count(" ") + 1)
 #
 #         return m
-
+#Problem - How many numbers are greater than itself
+# class Solution:
+#     def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+#         #         ans = []
+#         #         count = 0
+#         #         for i in range (1 , len(nums)):
+#         #             if nums[i-1] < nums[i]:
+#         #                 count += 1
+#         #                 i += 1
+#         #             else:
+#         #                 i += 1
+#         # ans = []
+#         # nums = sorted(nums)
+#         return [sorted(nums).index(i) for i in nums]
+#
