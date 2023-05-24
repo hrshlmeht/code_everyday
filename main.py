@@ -3192,3 +3192,12 @@ import sys
 #         # nums = sorted(nums)
 #         return [sorted(nums).index(i) for i in nums]
 #
+# class Solution:
+#     def createTargetArray(self, nums: List[int], index: List[int]) -> List[int]:
+#         ans = []
+#
+#         for i in range(len(nums)):
+#             ans.insert(index[i], nums[i])
+#
+#         print(ans)
+#         return (ans)
