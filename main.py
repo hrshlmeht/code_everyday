@@ -3208,3 +3208,15 @@ import sys
 #         for i in range(0, len(encoded)):
 #             arr.append(arr[i] ^ encoded[i])
 #         return arr
+###
+#PICKING UP GIFTS FROM THE RICHEST PILE
+# class Solution:
+#     def pickGifts(self, gifts: List[int], k: int) -> int:
+#         while k > 0:
+#             max_pile = max(gifts)
+#             # print (f"this is the max pile" , max_pile)
+#             index = gifts.index(max_pile)
+#             # print (f"Thid is the index" , index)
+#             gifts[index] = int(sqrt(max_pile))
+#             # print (gifts)
+#             k = k - 1
