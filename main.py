@@ -3232,4 +3232,17 @@ import sys
 #         print(ans)
 #
 #         return ans
+################# TRUNCATE the sentence##########
+# def truncateSentence(self, s: str, k: int) -> str:
+#     str_list = s.split()
+#     print(str_list)
+#     ans = []
+#
+#     for i in range(0, k):
+#         ans.append(str_list[i])
+#
+#     ans_string = ' '.join([str(elem) for elem in ans])
+#
+#     print(ans_string)
+#     return (ans_string)
 
