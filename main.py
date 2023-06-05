@@ -3220,3 +3220,16 @@ import sys
 #             gifts[index] = int(sqrt(max_pile))
 #             # print (gifts)
 #             k = k - 1
+# MAXMIMUM PRODUCT FROM AN ARRAY
+# class Solution:
+#     def maxProduct(self, nums: List[int]) -> int:
+#         first_num = max(nums)
+#         print(first_num)
+#         nums.remove(first_num)
+#         print(nums)
+#         second_num = max(nums)
+#         ans = (first_num - 1) * (second_num - 1)
+#         print(ans)
+#
+#         return ans
+
