@@ -3245,4 +3245,38 @@ import sys
 #
 #     print(ans_string)
 #     return (ans_string)
-
+#finding the middle index of the given array
+# class Solution:
+#     def findMiddleIndex(self, nums: List[int]) -> int:
+#         return self.sol1(nums)
+#
+#     def sol1(self, nums):
+#         l_sum = 0
+#         r_sum = sum(nums)
+#         for i in range(0, len(nums)):
+#             if l_sum == (r_sum - nums[i]):
+#                 return i
+#             else:
+#                 l_sum += nums[i]
+#                 r_sum -= nums[i]
+#         return -1  # If there is no such index
+#
+# #         ans_total = sum(nums)
+# # #         ans_left = []
+# # #         ans_right =[]
+# #         total = 0
+# #         ans = []
+#
+# #         for i in nums:
+# #             ans_num = ans_total - i
+# #             total = total + i
+#
+# #             print (f"This is ans_num",ans_num)
+# #             print (f"This is total" , total)
+# #             print (i)
+# #             # if total == ans_num:
+# #             #     ans = i
+# #             #     print (i)
+# #             # else:
+# #             #     continue
+#
