@@ -3308,3 +3308,45 @@ import sys
 
 
 #         print (first_diag)
+#################Check if every row and column contains all the numbers#######
+class Solution:
+    def checkValid(self, matrix: List[List[int]]) -> bool:
+        n = len(matrix)
+        vaild = set(range(1, n + 1))
+        for i in range(n):
+            set1, set2 = set(), set()
+            for j in range(n):
+                set1.add(matrix[i][j])
+                set2.add(matrix[j][i])
+            if set1 != vaild or set2 != vaild:
+                return False
+        return True
+
+#         n = len(matrix)
+#         valid = set([i+1 for i in range(len(matrix))])
+
+#         print (valid)
+
+#         mat_len = len(matrix)
+#         first_row = []
+
+#         for i in range ( 0 , mat_len):
+#             first_row.append(matrix[0][i])
+
+#         set_row = set(first_row)
+#         print (set_row)
+
+# for i in range
+
+#         for i in range ( 1 , mat_len ):
+#             for j in range ( 0 , len(matrix[i])):
+#                 if matrix[i][j] not in first_row and i == mat_len:
+#                     return False
+#                 else:
+#                     continue
+
+#         return True
+
+
+
+
