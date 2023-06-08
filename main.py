@@ -3279,4 +3279,32 @@ import sys
 # #             #     print (i)
 # #             # else:
 # #             #     continue
+#Matrix diagonal sum
+# class Solution:
+#     def diagonalSum(self, mat: List[List[int]]) -> int:
+#         ans = 0
+#         n = len(mat)
+#         for i in range(n):
+#             ans += mat[i][i]
+#             ans += mat[i][n - 1 - i]
 #
+#         if n % 2 == 1:
+#             ans -= mat[n // 2][n // 2]
+#
+#         return ans
+#
+# class Solution:
+#     def diagonalSum(self, mat: List[List[int]]) -> int:
+
+#         first_diag = []
+#         second_diag = []
+#         n= len(mat)
+
+#         for i in range (0 ,len(mat)):
+#             for j in range (0, len(mat[i])):
+#                 if i == j:
+#                     first_diag.append(mat[i][j])
+#                 second_diag = mat[n-1-i][i]
+
+
+#         print (first_diag)
