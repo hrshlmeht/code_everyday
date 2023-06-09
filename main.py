@@ -3309,18 +3309,18 @@ import sys
 
 #         print (first_diag)
 #################Check if every row and column contains all the numbers#######
-class Solution:
-    def checkValid(self, matrix: List[List[int]]) -> bool:
-        n = len(matrix)
-        vaild = set(range(1, n + 1))
-        for i in range(n):
-            set1, set2 = set(), set()
-            for j in range(n):
-                set1.add(matrix[i][j])
-                set2.add(matrix[j][i])
-            if set1 != vaild or set2 != vaild:
-                return False
-        return True
+# class Solution:
+#     def checkValid(self, matrix: List[List[int]]) -> bool:
+#         n = len(matrix)
+#         vaild = set(range(1, n + 1))
+#         for i in range(n):
+#             set1, set2 = set(), set()
+#             for j in range(n):
+#                 set1.add(matrix[i][j])
+#                 set2.add(matrix[j][i])
+#             if set1 != vaild or set2 != vaild:
+#                 return False
+#         return True
 
 #         n = len(matrix)
 #         valid = set([i+1 for i in range(len(matrix))])
@@ -3347,6 +3347,61 @@ class Solution:
 
 #         return True
 
+#######First completely painted row or column########
+# class Solution:
+#
+#     def firstCompleteIndex(self, arr: List[int], mat: List[List[int]]) -> int:
+#         rowCols = {}
+#         ROWS = len(mat)
+#         COLS = len(mat[0])
+#         for r in range(ROWS):
+#             for c in range(COLS):
+#                 rowCols[mat[r][c]] = [r, c]  # mapping cells to their r and c
+#         # variables for keeping track of painted cells in a row or column
+#         rowZeroes = ROWS * [0]
+#         colZeroes = COLS * [0]
+#         for n in range(len(arr)):
+#             num = arr[n]
+#             # another 2 painted cells
+#             rowZeroes[rowCols[num][0]] += 1
+#             colZeroes[rowCols[num][1]] += 1
+#
+#             if colZeroes[rowCols[num][1]] == ROWS:
+#                 return n
+#             elif rowZeroes[rowCols[num][0]] == COLS:
+#                 return n
+#
+        #         len_row = len(mat)
+#         len_col = len(mat[0])
+
+#         for i in range(0 , len(mat)):
+
+
+#         row = []
+#         col = []
+#         check_set = set(arr)
+#         length = len(mat)
+
+#         for i in range (0,len(mat)):
+#             for j in range ( 0 , len(mat[i])):
+#                 # print (mat[i][j])
+#                 row.append(mat[i][j])
+#                 col.append(mat[j][i])
+
+#         self.chunkIt(range(row) , length)
+#         self.chunkIt(range(col) , length)
+
+
+#        def chunkIt(seq, num):
+#         avg = len(seq) / float(num)
+#         out = []
+#         last = 0.0
+
+#         while last < len(seq):
+#             out.append(seq[int(last):int(last + avg)])
+#             last += avg
+
+#         return out
 
 
 
