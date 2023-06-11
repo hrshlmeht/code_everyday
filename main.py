@@ -3433,4 +3433,18 @@ import sys
 #
 #         return total
 #
+#finding the most frequent number following key in an array
+# class Solution:
+#     def mostFrequent(self, nums: List[int], key: int) -> int:
+#         x = []
+#         for i in range(len(nums) - 1):
+#             if nums[i] == key:
+#                 x.append(nums[i + 1])
 #
+#         x = Counter(x)
+#         print(x)
+#         y = list(x.values())
+#         z = list(x.keys())
+#         a = y.index(max(y))
+#         return z[a]
+
