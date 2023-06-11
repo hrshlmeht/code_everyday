@@ -3415,5 +3415,22 @@ import sys
 #
 #
 
-
-
+#returning the sum of maximum element in a row
+# class Solution:
+#     def deleteGreatestValue(self, grid: List[List[int]]) -> int:
+#
+#         for i in range(len(grid)):
+#             grid[i].sort(reverse=True)
+#
+#         total = 0
+#
+#         for i in range(len(grid[0])):
+#             maxval = 0
+#             for j in range(len(grid)):
+#                 maxval = max((grid[j][i]), maxval)
+#
+#             total = total + maxval
+#
+#         return total
+#
+#
