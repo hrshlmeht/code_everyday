@@ -3447,4 +3447,30 @@ import sys
 #         z = list(x.keys())
 #         a = y.index(max(y))
 #         return z[a]
+################counting items matching rule###
+# class Solution:
+#     def countMatches(self, items: List[List[str]], ruleKey: str, ruleValue: str) -> int:
+#         ct=0
+#         c=0
+#         rule={"type":0,"color":1,"name":2}
+#         for i in rule:
+#             if i == ruleKey:
+#                 c=rule[i]
+#                 break
+#         for i in range(len(items)):
+#             if items[i][c]==ruleValue:
+#                 ct+=1
+#         return ct
+# # class Solution:
+# #     def countMatches(self, items: List[List[str]], ruleKey: str, ruleValue: str) -> int:
 
+# #         count = 0
+# #         for i in items:
+# #             for j in i:
+# #                 if j == ruleValue:
+# #                     count= count +1
+# #                 else:
+# #                     continue
+
+# #         print(count)
+# #         return count
