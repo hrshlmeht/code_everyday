@@ -3474,3 +3474,38 @@ import sys
 
 # #         print(count)
 # #         return count
+
+#########Maximum sum with exactly K elements##############
+# class Solution:
+#     def maximizeSum(self, nums: List[int], k: int) -> int:
+#         ans = 0
+#
+#         for i in range(k):
+#             max_int = max(nums)
+#             nums.remove(max_int)
+#             ans = ans + max_int
+#             max_int += 1
+#             nums.append(max_int)
+#
+#         return ans
+#
+# #         ans = max(nums)
+# #         ans_arr = []
+# #         sum_ans = []
+# #         for i in :
+# #             if i == ans:
+# #                 nums.remove(i)
+# #                 sum_ans.append(i)
+# #                 i = i+1
+# #                 ans_arr.append(i)
+# #                 continue
+# #             else:
+# #                 ans_arr.append(i)
+# #                 continue
+#
+#
+# #         yolo = sum(sum_ans)
+# #         print(yolo)
+#
+#
+
