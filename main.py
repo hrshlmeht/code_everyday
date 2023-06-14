@@ -3534,7 +3534,25 @@ import sys
 #
 #
 #
+#class Solution:
+#     def addDigits(self, num: int) -> int:
+#
+#         ans = 0
+#         while num >=10:
+#             y = num % 10
+#             i = num//10
+#             print (i)
+#             print (y)
+#             ans = y+i
+#             num = ans
+#
+#         if ans >= 10:
+#             ans = ans//10
+#         else:
+#             ans = num
+#
+#         print(ans)
+#         return ans
+# #
 #
 #
-
-
