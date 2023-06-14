@@ -3509,3 +3509,32 @@ import sys
 #
 #
 
+# class Solution:
+#     def differenceOfSum(self, nums: List[int]) -> int:
+#
+#         total_sum = sum(nums)
+#         digit_sum = 0
+#         for i in nums:
+#             while i > 0:
+#                 digit_sum += (i % 10)  ##calculates the remainder
+#                 i = i // 10  ##ignores remainder
+#                 print(i)
+#
+#         print(total_sum)
+#         print(digit_sum)
+#         return abs(total_sum - digit_sum)
+#
+# #         yolo = []
+# #         for i in nums:
+# #             if i>=10:
+# #                 integer = i
+# #                 string = str(integer)
+# #                 output = map(int, string)
+# #                 yolo.append(output)
+#
+#
+#
+#
+#
+
+
