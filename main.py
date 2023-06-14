@@ -3555,4 +3555,43 @@ import sys
 #         return ans
 # #
 #
+############flipping an image###########
+# class Solution:
+#     def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
 #
+#         flipped = []
+#
+#         length = len(image)
+#
+#         if length == 0:
+#             return []
+#
+#         for i in image:
+#             flipped.append(i[::-1])
+#
+#         print(flipped)
+#         invert = []
+#         for i in flipped:
+#             current = []
+#             for j in i:
+#                 if j == 0:
+#                     current.append(1)
+#                 elif j == 1:
+#                     current.append(0)
+#             invert.append(current)
+#
+#         print(invert)
+#         return invert
+#
+# #         ans = List[List[int]]
+# #         for i in image:
+# #             print(i)
+# #             for j in i:
+# #                 print(j)
+# #                 if j == 0:
+# #                     j = 1
+# #                     ans[i].append(j)
+#
+# #         print (ans)
+#
+
