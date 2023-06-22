@@ -48,6 +48,44 @@
 #
 # #         print(sorted(ans))
 #
-=======
->>>>>>> 43419b07b410a8f450f93411459d83e8d070dc82
->>>>>>> 760a5e4241f84743a7d95289956ee7289445363d
+#
+#
+# class Solution:
+#     def maxArea(self, height: List[int]) -> int:
+#
+#         res = 0
+#
+#         left = 0
+#         right = len(height) - 1
+#         while left < right:
+#             area = (right - left) * min(height[left], height[right])
+#             res = max(area, res)
+#
+#             if height[right] > height[left]:
+#                 left += 1
+#             else:
+#                 right -= 1
+#
+#         return res
+#
+# # brute force approach , maximum time limit exceeded
+# #         result = 0
+#
+# #         for left in range(len(height)):
+# #             for right in range(left+1 , len(height)):
+# #                 area = (right - left) * min(height[left], height[right])
+# #                 result = max(result, area)
+#
+# #         return result
+#
+# #         for i in range(len(height)):
+# #             for  j in range(i+1 , len(height)+1):
+# #                 print(f'This is ith height {height[i]}')
+# #                 print(f'This is jth height {height[j-1]}')
+# #                 if i < len(height) and j < len(height):
+# #                     ans = max(((height[i]*height[j-i])*(j-i)) ,((height[i]*height[j])*(j-i)))
+# #                 else :
+# #                     ans = max(ans, 0)
+#
+#
+# #         return(ans)
