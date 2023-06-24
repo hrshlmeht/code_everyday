@@ -3024,3 +3024,23 @@ import sys
 #         string = int(num1) + int(num2)
 #
 #         return (str(string))
+
+
+# print("Enter the number of rows")
+#
+# rows = int(input())
+# print ("Enter the number of cols")
+#
+# cols = int(input())
+#
+# matrix = [cols[rows]]
+#
+# for i in range(0 , cols):
+#     for j in range ( 0 , rows):
+#         print (f"Enter the {i}the elemet in {j}th row")
+#         matrix[i[j]] = int(input())
+#
+#
+#
+#
+# print (matrix)
