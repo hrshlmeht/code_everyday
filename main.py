@@ -8,20 +8,7 @@
 #                 i = i.upper()
 #                 ans.append(i)
 #
-<<<<<<< HEAD
-#         return sum(ans)
-#######divisor game - Lol##########
-# class Solution:
-#     def divisorGame(self, n: int) -> bool:
-#         return n%2==0
-=======
-#         print(ans)
-#         print(ans[::-1])
-#         if ans == ans[::-1]:
-#             return True
-#         else:
-#             return False
-<<<<<<< HEAD
+#
 
 #####TWO POINTER - Two sum 2 (input array is sorted)
 # class Solution:
@@ -89,3 +76,25 @@
 #
 #
 # #         return(ans)
+
+
+#########valid parentheses########
+# class Solution:
+#     def isValid(self, s: str) -> bool:
+#         stack = []
+#
+#         mapping = {
+#             '(': ')',
+#             '[': ']',
+#             '{': '}'
+#         }
+#
+#         for char in s:
+#             if char in mapping.keys():
+#                 stack.append(mapping[char])
+#             elif not stack or stack[-1] != char:
+#                 return False
+#             else:
+#                 stack.pop()
+#
+#         return len(stack) == 0
