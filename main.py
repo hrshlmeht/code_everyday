@@ -109,3 +109,20 @@
 #
 #         print(ans)
 #         return max(ans)
+
+###############Minimum number of seats to move everyone
+
+# class Solution:
+#     def minMovesToSeat(self, seats: List[int], students: List[int]) -> int:
+#         ans = []
+#         seats = sorted(seats)
+#         students = sorted(students)
+#
+#         for i in range(0, len(students)):
+#             j = students[i] - seats[i]
+#             ans.append(abs(j))
+#
+#         print(sum(ans))
+#         return sum(ans)
+#
+#
