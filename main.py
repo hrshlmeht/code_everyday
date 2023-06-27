@@ -126,3 +126,24 @@
 #         return sum(ans)
 #
 #
+####trapping rainwater //leetcode hard
+
+
+# class Solution:
+#     def trap(self, height: List[int]) -> int:
+#
+#         left, right = 0, len(height) - 1
+#         maxLeft, maxRight = height[left], height[right]
+#         result = 0
+#
+#         while left < right:
+#             if maxLeft < maxRight:
+#                 left = left + 1
+#                 maxLeft = max(maxLeft, height[left])
+#                 result += maxLeft - height[left]
+#             else:
+#                 right = right - 1
+#                 maxRight = max(maxRight, height[right])
+#                 result += maxRight - height[right]
+#
+#         return result
