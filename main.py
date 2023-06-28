@@ -161,3 +161,23 @@
 #                 current_sum += arr[right]
 #                 answer += current_sum if (right - left + 1) % 2 == 1  else 0
 #         return answer
+
+
+###neighter minimum nor maximum
+#
+# class Solution:
+#     def findNonMinOrMax(self, nums: List[int]) -> int:
+#
+#         if len(nums) == 2 or len(nums) == 1 or len(nums) == 0:
+#             return -1
+#
+#         num1 = max(nums)
+#         num2 = min(nums)
+#
+#         for i in nums:
+#             if i != num1 and i != num2:
+#                 return i
+#
+#
+#
+
