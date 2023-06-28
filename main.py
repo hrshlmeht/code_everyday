@@ -222,3 +222,22 @@
 #         print(max(neg, pos))
 #         return (max(neg, pos))
 #
+
+################missing number
+# class Solution:
+#     def missingNumber(self, nums: List[int]) -> int:
+#         l = len(nums)
+#         nums = sorted(nums)
+#         real_ans = 0
+#
+#         ans = []
+#         for i in range(1, l + 1):
+#             ans.append(i)
+#
+#         for i in ans:
+#             if i not in nums:
+#                 real_ans = i
+#
+#         print(type(real_ans))
+#         return real_ans
+#         # return real_ans
