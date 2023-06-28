@@ -181,3 +181,24 @@
 #
 #
 
+##########count the negative numbers in a matrix
+# class Solution:
+    # def countNegatives(self, grid: List[List[int]]) -> int:
+    #
+    #     ans = []
+    #
+    #     count = 0
+    #
+    #     for i in range(0 , len(grid)):
+    #         for j in range( 0 , len(grid[i])):
+    #             print (grid[i][j])
+    #             ans.append(grid[i][j])
+    #
+    #
+    #     print (ans)
+    #     for i in ans:
+    #         if i < 0:
+    #             count += 1
+    #
+    #     return count
+
