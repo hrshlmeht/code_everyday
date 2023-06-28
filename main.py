@@ -202,3 +202,23 @@
     #
     #     return count
 
+###########maximum count of positive and negative integer#
+# class Solution:
+#     def maximumCount(self, nums: List[int]) -> int:
+#         pos = 0
+#         neg = 0
+#
+#         for i in nums:
+#             if i > 0:
+#                 pos += 1
+#             if i < 0:
+#                 neg += 1
+#             else:
+#                 pos = pos
+#                 neg = neg
+#
+#         print(f"Pos {pos}")
+#         print(neg)
+#         print(max(neg, pos))
+#         return (max(neg, pos))
+#
