@@ -241,3 +241,22 @@
 #         print(type(real_ans))
 #         return real_ans
 #         # return real_ans
+
+
+##################height checker##
+# class Solution:
+#     def heightChecker(self, heights: List[int]) -> int:
+#
+#         expected = sorted(heights)
+#
+#         print(expected)
+#         ans = 0
+#         print(len(heights))
+#         for i in range(0, len(heights)):
+#             print(i)
+#             print(expected[i])
+#             print(heights[i])
+#             if expected[i] != heights[i]:
+#                 ans += 1
+#
+#         return ans
