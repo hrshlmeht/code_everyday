@@ -260,3 +260,19 @@
 #                 ans += 1
 #
 #         return ans
+
+####### Count the number of consistent strings###########
+#
+# class Solution:
+#     def countConsistentStrings(self, allowed: str, words: List[str]) -> int:
+#
+#         count = 0
+#
+#         for word in words:
+#             for ch in word:
+#                 if ch not in allowed:
+#                     count += 1
+#                     break
+#
+#         print(len(words) - count)
+#         return len(words) - count
