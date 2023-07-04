@@ -276,3 +276,21 @@
 #
 #         print(len(words) - count)
 #         return len(words) - count
+
+##########Count the number of even digit numbers in an array#########
+# class Solution:
+#     def findNumbers(self, nums: List[int]) -> int:
+#         numspro = []
+#
+#         count = 0
+#
+#         for i in nums:
+#             numspro.append(str(i))
+#
+#         print(numspro)
+#         for j in numspro:
+#             if len(j) % 2 == 0:
+#                 count += 1
+#
+#         print(count)
+#         return count
