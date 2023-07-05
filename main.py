@@ -294,3 +294,44 @@
 #
 #         print(count)
 #         return count
+
+################printinh the sum of unique elements###########
+#
+# class Solution:
+#     def sumOfUnique(self, nums: List[int]) -> int:
+#
+#         result = 0
+#         dup = set()
+#         unique = set()
+#
+#         for ele in nums:
+#             if not (ele in unique or ele in dup):
+#                 unique.add(ele)
+#             elif ele in unique:
+#                 unique.discard(ele)
+#                 dup.add(ele)
+#
+#         for elements in unique:
+#             result += elements
+#
+#         print(dup)
+#
+#         print(unique)
+#         return result
+#
+# #         duplicate = set()
+# #         unique = set()
+#
+#
+# #         for element in nums:
+# #             if element not in unique or element not in duplicate:
+# #                 unique.add(element)
+# #                 print (element)
+#
+# #             elif element in unique:
+# #                 duplicate.add(element)
+# #                 unique.discard(element)
+#
+#
+# #         print(unique)
+# #         print(duplicate)
