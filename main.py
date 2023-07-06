@@ -362,3 +362,17 @@
 # #             return (count)
 #
 #
+###shuffle string#####
+# class Solution:
+#     def restoreString(self, s: str, indices: List[int]) -> str:
+#         # string_arr = []
+#
+#         res = [''] * len(s)
+#
+#         for i in range(len(s)):
+#             res[indices[i]] = s[i]
+#
+#         result = ''.join(res)
+#         print(result)
+#
+#         return result
