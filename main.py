@@ -335,3 +335,30 @@
 #
 # #         print(unique)
 # #         print(duplicate)
+
+##busy student###########
+# class Solution:
+#     def busyStudent(self, startTime: List[int], endTime: List[int], queryTime: int) -> int:
+#
+#         count = 0
+#         for i in range(0, len(startTime)):
+#             if startTime[i] <= queryTime and endTime[i] >= queryTime:
+#                 count += 1
+#
+#         return count
+#     #         count = 0
+#
+# #         if len(startTime) == 1 or startTime[0] - endTime[0] == 0 :
+# #                       print (count)
+# #             if startTime[0] - endTime[0] == queryTime:
+# #                 count =1
+# #                 print (f"Len 1 eala count {count}")
+# #             return count
+#
+# #         else:
+# #             for i in range(0 , len(startTime)):
+# #                 if endTime[i] - startTime[i] == queryTime :
+# #                       count +=1
+# #             return (count)
+#
+#
