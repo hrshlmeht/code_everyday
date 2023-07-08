@@ -422,3 +422,22 @@
 #                 return sum(nums[i - 3:i])
 #
 #         return 0
+
+
+##############finding senrior citizens from an encoded string####
+# class Solution:
+#     def countSeniors(self, details: List[str]) -> int:
+#         age = []
+#
+#         for i in details:
+#             age_num = i[11:13]
+#             age.append(age_num)
+#         count = 0
+#
+#         for i in age:
+#             if i > '60':
+#                 count += 1
+#
+#         print(count)
+#
+#         return count
