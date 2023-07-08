@@ -376,3 +376,37 @@
 #         print(result)
 #
 #         return result
+####################finding the maximum area of the triangle from the given co-ordinates########
+
+# class Solution:
+#     def largestTriangleArea(self, points: List[List[int]]) -> float:
+#
+#         area = 0
+#         n = len(points)
+#         for i in range(n):
+#             x1, y1 = points[i]
+#             for j in range(i + 1, n):
+#                 x2, y2 = points[j]
+#                 for k in range(j + 1, n):
+#                     x3, y3 = points[k]
+#                     curr = abs(0.5 * (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)))
+#                     if curr > area:
+#                         area = curr
+#         return area
+#
+# #         dist = []
+# #         for i in range(0 , len(points)):
+# #             print (points[i])
+#
+# #             length = abs(points[i][0] - points[i][1])
+# #             dist.append(length)
+#
+#
+# #         print (dist)
+# #         max1 = max(dist)
+# #         dist.remove(max1)
+# #         max2 = max(dist)
+# #         area = 0.5 * max1 * max2
+#
+# #         print (area)
+# #         return area
