@@ -441,3 +441,25 @@
 #         print(count)
 #
 #         return count
+
+
+########doing the baseball operations######
+# class Solution:
+#     def calPoints(self, operations: List[str]) -> int:
+
+#         ans = []
+
+#         for i in operations:
+#             if i =='C':
+#                 ans.pop()
+#             elif i =='D':
+#                 ans.append(ans[-1]*2)
+#             elif i == '+':
+#                 ans.append(ans[-1]+ ans[-2])
+#             else:
+#                 ans.append(int(i))
+
+#         print(ans)
+#         return sum(ans)
+
+
