@@ -485,3 +485,19 @@
 #
 #     def getMin(self) -> int:
 #         return self.minStack[-1]
+
+############easy array problem#########
+# class Solution:
+#     def distinctDifferenceArray(self, nums: List[int]) -> List[int]:
+#         diff = []
+#
+#         for i in range(0, len(nums)):
+#             prefix = nums[i + 1:]
+#             print(prefix)
+#             suffix = nums[:i + 1]
+#             difference = len(set(suffix)) - len(set(prefix))
+#             print(difference)
+#
+#             diff.append(difference)
+#
+#         return diff
