@@ -501,3 +501,33 @@
 #             diff.append(difference)
 #
 #         return diff
+
+
+############finding the row having max number of 1###########
+# class Solution:
+#     def rowAndMaximumOnes(self, mat: List[List[int]]) -> List[int]:
+#         n = len(mat)
+#         m = len(mat[0])
+#         row, count_one = 0, 0
+#         for i in range(n):
+#             one = 0
+#             for j in range(m):
+#                 if mat[i][j] == 1:
+#                     one += 1
+#
+#             if one > count_one:
+#                 count_one = one
+#
+#                 row = i
+#
+#         return [row, count_one]
+#
+#     #         ans = {}
+# #         for i in mat:
+# #             count = 0
+# #             for j in i:
+# #                 if j == 1:
+# #                     count += 1
+# #             ans[tuple(i)] = count
+#
+# #         print(ans)
