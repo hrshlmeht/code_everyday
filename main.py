@@ -531,3 +531,21 @@
 # #             ans[tuple(i)] = count
 #
 # #         print(ans)
+
+
+########### finding number of occurences
+# class Solution:
+#     def uniqueOccurrences(self, arr: List[int]) -> bool:
+#         yolo = []
+#         ans_set = set(arr)
+#         print(ans_set)
+#         for i in ans_set:
+#             ans = arr.count(i)
+#             yolo.append(ans)
+#
+#         yolo_set = set(yolo)
+#
+#         if len(yolo_set) == len(yolo):
+#             return True
+#         else:
+#             return False
