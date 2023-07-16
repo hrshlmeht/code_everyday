@@ -566,3 +566,33 @@
 #
 #         print(count)
 #         return count
+
+
+### two out of three###########
+# class Solution:
+#     def twoOutOfThree(self, nums1: List[int], nums2: List[int], nums3: List[int]) -> List[int]:
+#         set_num1 = set(nums1)
+#         set_num2 = set(nums2)
+#         set_num3 = set(nums3)
+#         ans = []
+#
+#         for i in set_num1:
+#             ans.append(i)
+#
+#         for i in set_num2:
+#             ans.append(i)
+#
+#         for i in set_num3:
+#             ans.append(i)
+#
+#         set_ans = set(ans)
+#
+#         final_ans = []
+#         for i in set_ans:
+#             count = ans.count(i)
+#             if count >= 2:
+#                 final_ans.append(i)
+#
+#         print(final_ans)
+#
+#         return final_ans
