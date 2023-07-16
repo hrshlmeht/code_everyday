@@ -596,3 +596,25 @@
 #         print(final_ans)
 #
 #         return final_ans
+
+
+###############removing the outer parentheses of valid parentheses###########
+# class Solution:
+#     def removeOuterParentheses(self, s: str) -> str:
+#
+#         lCount, rCount = 0, 0
+#         temp = []
+#         ans = []
+#         for char in s:
+#             temp.append(char)
+#             print(f"Temp while starting the for loop {temp}")
+#             if char == '(':
+#                 lCount += 1
+#             elif char == ')':
+#                 rCount += 1
+#                 if lCount == rCount:
+#                     ans += temp[1:-1]
+#                     temp = []
+#                     print(f"Ans in the if loop {ans}")
+#
+#         return ''.join(ans)
