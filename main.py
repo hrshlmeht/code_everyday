@@ -674,3 +674,14 @@
 #             return ans[k - 1]
 #         else:
 #             return ""
+
+#returning the maximum sum of the minimum value in pairs of an array########
+# class Solution:
+#     def arrayPairSum(self, nums: List[int]) -> int:
+#         nums = sorted(nums)
+#         ans = []
+#
+#         for i in range(1, len(nums), 2):
+#             ans.append(min(nums[i - 1], nums[i]))
+#
+#         return sum(ans)
