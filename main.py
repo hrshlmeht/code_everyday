@@ -618,3 +618,25 @@
 #                     print(f"Ans in the if loop {ans}")
 #
 #         return ''.join(ans)
+
+
+
+#########returning the discounted price of arrays depending on the condition#########
+
+# class Solution:
+#     def finalPrices(self, prices: List[int]) -> List[int]:
+#         ans = []
+#         for i in range(0, len(prices)):
+#             flag = False
+#             for j in range(i + 1, len(prices)):
+#                 if prices[i] >= prices[j]:
+#                     ans.append(prices[i] - prices[j])
+#                     flag = True
+#                     break
+#             if not flag:
+#                 ans.append(prices[i])
+#
+#         print(ans)
+#
+#         return ans
+#
