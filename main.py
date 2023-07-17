@@ -640,3 +640,12 @@
 #
 #         return ans
 #
+########making the arrays in such a way that the sum is always 0######## microsoft asked question
+
+# class Solution:
+#     def sumZero(self, n: int) -> List[int]:
+#         result = list(range(1, n))
+#         print(result)
+#         result.append(-(sum(result)))
+#         print(result)
+#         return result
