@@ -658,3 +658,19 @@
 #             return True
 #         else:
 #             return False
+
+
+######finding the  kth distinct element in an array #############
+# class Solution:
+#     def kthDistinct(self, arr: List[str], k: int) -> str:
+#         ans = []
+#         for i in arr:
+#
+#             if arr.count(i) == 1:
+#                 print(i)
+#                 ans.append(i)
+#
+#         if k <= len(ans):
+#             return ans[k - 1]
+#         else:
+#             return ""
