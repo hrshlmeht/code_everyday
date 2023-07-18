@@ -685,3 +685,14 @@
 #             ans.append(min(nums[i - 1], nums[i]))
 #
 #         return sum(ans)
+
+
+######keep multiplying found values by 2######
+# class Solution:
+#     def findFinalValue(self, nums: List[int], original: int) -> int:
+#
+#         if original in nums:
+#             while original in nums:
+#                 original = original * 2
+#
+#         return original
