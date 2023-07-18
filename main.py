@@ -696,3 +696,12 @@
 #                 original = original * 2
 #
 #         return original
+###############lol################
+#####returning if the array can be made into target array or not##########
+# class Solution:
+#     def canBeEqual(self, target: List[int], arr: List[int]) -> bool:
+#
+#         if sorted(target) == sorted(arr):
+#             return True
+#         else:
+#             return False
