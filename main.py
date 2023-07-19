@@ -705,3 +705,26 @@
 #             return True
 #         else:
 #             return False
+
+
+##############very important (traversing in a matrix########### lucky numbers
+# class Solution:
+#     def luckyNumbers(self, matrix: List[List[int]]) -> List[int]:
+#
+#         len_rows = len(matrix)
+#         len_cols = len(matrix[0])
+#         columns = []
+#         for i in range(len_cols):
+#             columns.append(0)
+#         rows = set()
+#         for i in range(len_rows):
+#             rows.add(min(matrix[i]))
+#         for i in range(len_rows):
+#             for j in range(len_cols):
+#                 columns[j] = max(columns[j], matrix[i][j])
+#
+#         ans = []
+#         for i in columns:
+#             if i in rows:
+#                 ans.append(i)
+#         return ans
