@@ -728,3 +728,37 @@
 #             if i in rows:
 #                 ans.append(i)
 #         return ans
+################finding the difference between the arrays and targeted arrays########
+# class Solution:
+#     def findTheDistanceValue(self, arr1: List[int], arr2: List[int], d: int) -> int:
+#         count = 0
+#         for i in arr1:
+#             for j in arr2:
+#                 if abs(i - j) <= d:
+#                     break
+#             else:
+#                 count += 1
+#
+#         return count
+#
+# # class Solution:
+# #     def findTheDistanceValue(self, arr1: List[int], arr2: List[int], d: int) -> int:
+#
+#
+# #         ans = []
+#
+# #         temp = 0
+# #         for i in arr1:
+# #             count = 0
+# #             for j in arr2:
+# #                 temp = abs(i - j)
+# #                 if temp >=d:
+# #                     count+=1
+# #             if count == len(arr2):
+# #                     print(i)
+# #                     ans.append(count)
+#
+# #         print(ans)
+#
+# #         #return len(ans)
+#
