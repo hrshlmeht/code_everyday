@@ -784,3 +784,20 @@
 #                 stack.append(int(op))
 #
 #         return stack[0]
+
+############maximum difference between tow elements########
+# class Solution:
+#     def maximumDifference(self, nums: List[int]) -> int:
+#
+#         ans = []
+#
+#         for i in range(0, len(nums)):
+#             for j in range(i + 1, len(nums)):
+#                 if nums[j] > nums[i]:
+#                     max_diff = nums[j] - nums[i]
+#                     ans.append(max_diff)
+#
+#         if len(ans) == 0:
+#             return -1
+#         else:
+#             return max(ans)
