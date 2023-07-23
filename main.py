@@ -801,3 +801,29 @@
 #             return -1
 #         else:
 #             return max(ans)
+
+########gneerating the paranthesis of given integer using back tracking #####################
+# class Solution:
+#     def generateParenthesis(self, n: int) -> List[str]:
+#
+#         stack = []
+#         result = []
+#
+#         def back_tracking(count_closed, count_open):
+#
+#             if count_closed == count_open == n:
+#                 result.append("".join(stack))
+#                 return
+#
+#             if count_open < n:
+#                 stack.append('(')
+#                 back_tracking(count_closed, count_open + 1)
+#                 stack.pop()
+#
+#             if count_closed < count_open:
+#                 stack.append(')')
+#                 back_tracking(count_closed + 1, count_open)
+#                 stack.pop()
+#
+#         back_tracking(0, 0)
+#         return result
