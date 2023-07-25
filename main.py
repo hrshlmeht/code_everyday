@@ -863,3 +863,17 @@
 #         print(stack)
 #         print(res)
 #     # return res
+
+
+#########easy and treat leetcode problem#########
+# class Solution:
+#     def targetIndices(self, nums: List[int], target: int) -> List[int]:
+#
+#         nums = sorted(nums)
+#         ans = []
+#         for i in range(0, len(nums)):
+#             if nums[i] == target:
+#                 ans.append(i)
+#
+#         print(ans)
+#         return ans
