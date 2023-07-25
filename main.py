@@ -845,3 +845,21 @@
 #
 #         print(ans)
 #         return (ans)
+
+
+###############daily temperatures neetcode##########
+
+# class Solution:
+#     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+#         res = [0] * len(temperatures)
+#         stack = []  # pair: value, index
+#         for i, t in enumerate(temperatures):
+#             # if the next elem is greater than current element
+#             while stack and t > stack[-1][0]:  # [-1]= top,[0]= 1st elem
+#                 stackT, stackInd = stack.pop()
+#                 res[stackInd] = (i - stackInd)
+#             stack.append([t, i])
+#
+#         print(stack)
+#         print(res)
+#     # return res
