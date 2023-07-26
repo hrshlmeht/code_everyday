@@ -899,3 +899,19 @@
 # if __name__ == '__main__':
 #     string, k = input(), int(input())
 #     merge_the_tools(string, k)
+
+
+###returning the maximum value of a string in an array#########
+# class Solution:
+#     def maximumValue(self, strs: List[str]) -> int:
+#         ans = []
+#         for i in range(0, len(strs)):
+#             if strs[i].isnumeric():
+#                 ans.append(int(strs[i]))
+#             elif strs[i].isdigit():
+#                 ans.append(len(strs[i]))
+#             else:
+#                 ans.append(len(strs[i]))
+#
+#         print(ans)
+#         return max(ans)
