@@ -915,3 +915,33 @@
 #
 #         print(ans)
 #         return max(ans)
+
+
+####maximum subarray##########
+
+# class Solution:
+#     def maxSubArray(self, nums: List[int]) -> int:
+#
+#         if len(nums) == 0:
+#             return nums[0]
+#
+#         ans = nums[0]
+#         marker = nums[0]
+#
+#         for i in range(1, len(nums)):
+#             current = max(nums[i], nums[i] + marker)
+#             ans = max(ans, current)
+#             marker = current
+#
+#         print(ans)
+#         return ans
+#
+# #         ans = []
+# #         sum_ans = []
+# #         for i in nums:
+# #             ans.append(i)
+# #             j = sum(ans)
+# #             sum_ans.append(j)
+#
+# #         print(ans)
+# #         print(sum_ans)
