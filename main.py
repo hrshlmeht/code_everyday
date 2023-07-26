@@ -877,3 +877,25 @@
 #
 #         print(ans)
 #         return ans
+
+
+####Merge the tools problem from hacker_rank###########
+
+# def merge_the_tools(string, k):
+#     # your code goes here
+#     ans = []
+#     j = 0
+#     for i in range(0, len(string), k):
+#         ans.append(string[i:(i + k)])
+#
+#     for i in ans:
+#         s = ""
+#         for j in i:
+#             if j not in s:
+#                 s += j
+#         print(s)
+#
+#
+# if __name__ == '__main__':
+#     string, k = input(), int(input())
+#     merge_the_tools(string, k)
