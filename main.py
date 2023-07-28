@@ -945,3 +945,23 @@
 #
 # #         print(ans)
 # #         print(sum_ans)
+
+
+#####finding the GCD of max and min in an array####
+#
+# class Solution:
+#     def findGCD(self, nums: List[int]) -> int:
+#
+#         minimum = min(nums)
+#         maximum = max(nums)
+#         ans = []
+#         for i in range(1, maximum + 1):
+#             if maximum % i == 0 and minimum % i == 0:
+#                 ans.append(i)
+#
+#         print(ans)
+#         if len(ans) == 0:
+#             return 1
+#         else:
+#             return max(ans)
+
