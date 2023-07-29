@@ -965,3 +965,13 @@
 #         else:
 #             return max(ans)
 
+####maximum product difference between two pairs######
+# class Solution:
+#     def maxProductDifference(self, nums: List[int]) -> int:
+#         nums = sorted(nums)
+#
+#         min_pair_prod = nums[0] * nums[1]
+#
+#         max_pair_prod = nums[len(nums) - 1] * nums[len(nums) - 2]
+#
+#         return max_pair_prod - min_pair_prod
