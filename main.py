@@ -986,3 +986,18 @@
 #                 return i
 #
 #         return -1
+
+
+######range sum of sorted subarray sums#####
+# class Solution:
+#     def rangeSum(self, nums: List[int], n: int, left: int, right: int) -> int:
+#         sum_ans = []
+#         for i in range(0, len(nums)):
+#             arr = 0
+#             for j in range(i, len(nums)):
+#                 arr += nums[j]
+#                 sum_ans.append(arr)
+#
+#         print(sum_ans)
+#         sum_ans = sorted(sum_ans)[left - 1:right:]
+#         return sum(sum_ans) % 1000000007
