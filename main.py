@@ -975,3 +975,14 @@
 #         max_pair_prod = nums[len(nums) - 1] * nums[len(nums) - 2]
 #
 #         return max_pair_prod - min_pair_prod
+
+
+#######Smaleest index with equal value#####
+# class Solution:
+#     def smallestEqual(self, nums: List[int]) -> int:
+#
+#         for i in range(0, len(nums)):
+#             if i % 10 == nums[i]:
+#                 return i
+#
+#         return -1
