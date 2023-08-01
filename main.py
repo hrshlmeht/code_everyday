@@ -1001,3 +1001,15 @@
 #         print(sum_ans)
 #         sum_ans = sorted(sum_ans)[left - 1:right:]
 #         return sum(sum_ans) % 1000000007
+
+
+#######lol - checking the anagram using inbuilt functions########
+
+# class Solution:
+#     def checkIfPangram(self, sentence: str) -> bool:
+#         set_len = set(sentence)
+#
+#         if len(set_len) == 26:
+#             return True
+#
+#         return False
