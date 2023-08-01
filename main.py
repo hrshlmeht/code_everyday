@@ -1028,3 +1028,28 @@
 #         print(count)
 #
 #         return (count)
+
+
+
+#reverse vowels of a string using 2 pointers#######
+
+# class Solution:
+#     def reverseVowels(self, s: str) -> str:
+#
+#         list_vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+#
+#         i = 0
+#         j = len(s) - 1
+#         s = list(s)
+#         while i < j:
+#             if s[i] not in list_vowels:
+#                 i += 1
+#             if s[j] not in list_vowels:
+#                 j -= 1
+#             if s[i] in list_vowels and s[j] in list_vowels:
+#                 s[i], s[j] = s[j], s[i]
+#                 i += 1
+#                 j -= 1
+#         s = "".join(s)
+#         print(s)
+#         return s
