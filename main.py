@@ -1053,3 +1053,19 @@
 #         s = "".join(s)
 #         print(s)
 #         return s
+
+
+#############reversing the integer######
+# class Solution:
+#     def reverse(self, x: int) -> int:
+#         negative = x < 0
+#         x = str(abs(x))
+#         ans_int = int(x[::-1])
+#
+#         if negative:
+#             ans_int *= -1
+#
+#         if ans_int < -2 ** 31 or ans_int > 2 ** 31 - 1:
+#             return 0
+#
+#         return ans_int
