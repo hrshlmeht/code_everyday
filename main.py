@@ -1069,3 +1069,23 @@
 #             return 0
 #
 #         return ans_int
+
+
+###############minimum steps to reach 0######
+
+# class Solution:
+#     def numberOfSteps(self, num: int) -> int:
+#
+#         count = 0
+#
+#         while num > 0:
+#             if num % 2 == 0:
+#                 num = num // 2
+#                 count += 1
+#                 # print(count)
+#             else:
+#                 num = num - 1
+#                 count += 1
+#
+#         print(count)
+#         return count
