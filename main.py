@@ -1089,3 +1089,27 @@
 #
 #         print(count)
 #         return count
+
+
+#########################################
+
+# class Solution:
+#     def minSubarray(self, nums: List[int], p: int) -> int:
+#
+#         sum_array = sum(nums)
+#
+#         if sum_array % p == 0:
+#             return 0
+#
+#         ans = []
+#         for i in nums:
+#
+#             print(i)
+#             print(sum_array)
+#             if (sum_array - i) % p == 0:
+#                 ans.append(i)
+#                 sum_array = sum_array - i
+#
+#         print(ans)
+#         return len(ans)
+
