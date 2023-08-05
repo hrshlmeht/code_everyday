@@ -1122,3 +1122,55 @@
 #             return True
 #
 #         return False
+
+########maximum number of enemy forts that can be captured####
+#
+# class Solution:
+#     def captureForts(self, forts: List[int]) -> int:
+#         if 1 not in forts and -1 not in forts: return 0
+#         output_forward = []
+#         count = 0
+#         flag = False
+#         for i in forts:
+#             if i == 1:
+#                 flag = True
+#                 count = 0
+#
+#             elif i == -1:
+#                 flag = False
+#                 output_forward.append(count)
+#
+#             if flag and i == 0:
+#                 count += 1
+#                 # output_forward.append(count)
+#
+#         print(output_forward)
+#
+#         output_backward = []
+#         count_back = 0
+#         flag = False
+#         for i in range(len(forts) - 1, -1, -1):
+#             if forts[i] == 1:
+#                 flag = True
+#                 count_back = 0
+#
+#             elif forts[i] == -1:
+#                 flag = False
+#                 output_backward.append(count_back)
+#
+#             if flag == True and forts[i] == 0:
+#                 count_back += 1
+#                 # output_backward.append(count_back)
+#
+#         print(output_backward)
+#         output_forward += output_backward
+#         if len(output_forward) == 0:
+#             return 0
+#
+#         else:
+#             return max(output_forward)
+#
+#
+#
+#
+#
