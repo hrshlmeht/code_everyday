@@ -1113,3 +1113,12 @@
 #         print(ans)
 #         return len(ans)
 
+########checking if the array is monolithic or not########
+# class Solution:
+#     def isMonotonic(self, nums: List[int]) -> bool:
+#         nums_sorted = sorted(nums)
+#
+#         if nums == nums_sorted or nums == nums_sorted[::-1]:
+#             return True
+#
+#         return False
