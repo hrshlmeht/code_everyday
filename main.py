@@ -1185,3 +1185,20 @@
 #             s[left], s[right] = s[right] , s[left]
 #             left +=1
 #             right -=1
+
+
+#########minimum cost required to move to strings#####
+# class Solution:
+#     def minCostToMoveChips(self, position: List[int]) -> int:
+#         even, odd = 0, 0
+#         n = len(position)
+#         for i in position:
+#             if i % 2 == 0:
+#                 even += 1
+#             else:
+#                 odd += 1
+#         if even == n or odd == n:
+#             return 0
+#         else:
+#             return min(even, odd)
+
