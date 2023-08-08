@@ -1202,3 +1202,14 @@
 #         else:
 #             return min(even, odd)
 
+#########Number of arithmetic triplets######
+# class Solution:
+#     def arithmeticTriplets(self, nums: List[int], diff: int) -> int:
+#         result = 0
+#         for i in range(0, len(nums)):
+#             if nums[i] + diff in nums and nums[i] + (diff * 2) in nums:
+#                 result += 1
+#
+#         print(result)
+#         return result
+#
