@@ -1236,3 +1236,27 @@
 #
 #         print(answer)
 #         return answer
+
+
+########ceells in a range of excel sheet###########
+# class Solution:
+#     def cellsInRange(self, s: str) -> List[str]:
+#
+#         ans = []
+#
+#         numeric_start = int(s[1:2])
+#         print(numeric_start)
+#         numeric_end = int(s[4:5])
+#         print(numeric_end)
+#         character_start_num = ord(s[0:1])
+#         print(character_start_num)
+#         character_end_num = ord(s[3:4])
+#         print(character_end_num)
+#
+#         for i in range(character_start_num, character_end_num + 1):
+#             ans_string = ''
+#             for j in range(numeric_start, numeric_end + 1):
+#                 ans_string = chr(i) + str(j)
+#                 ans.append(ans_string)
+#
+#         print(ans)
