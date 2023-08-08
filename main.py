@@ -1213,3 +1213,15 @@
 #         print(result)
 #         return result
 #
+
+##########Excel sheet column title#########
+# class Solution:
+#     def convertToTitle(self, columnNumber: int) -> str:
+#         result = ""
+#         while columnNumber > 0:
+#             columnNumber -= 1
+#             result = chr(columnNumber % 26 + ord('A')) + result
+#             columnNumber //= 26
+#
+#         print(result)
+#         return result
