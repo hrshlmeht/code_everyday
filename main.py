@@ -836,7 +836,7 @@ import sys
 #
 # unique_in_order('AAAABBBCCDAABBB')
 
-#leetcode solution for house robber
+# leetcode solution for house robber
 # class Solution(object):
 #     def rob(self, nums):
 #         robber_1 = 0
@@ -855,7 +855,7 @@ import sys
 #
 # sorted_list.sort()
 # print(sorted_list)
-#leetcode solution for finding length of the last word
+# leetcode solution for finding length of the last word
 
 # class Solution:
 #     def lengthOfLastWord(self, s: str) -> int:
@@ -866,7 +866,7 @@ import sys
 #         l = s.split(" ") # then split it so that we get a list of all the words in the string
 #         return len(l[-1])
 
-#leetcode for solution for duplicates
+# leetcode for solution for duplicates
 
 # class Solution:
 #     def containsDuplicate(self, nums: List[int]) -> bool:
@@ -892,7 +892,7 @@ import sys
 #             else:
 #                 HashSet.add(n)
 #
-#i have written this code but only 29/34 test cases are passing. Not sure why the rest arent
+# i have written this code but only 29/34 test cases are passing. Not sure why the rest arent
 # class Solution(object):
 #     def isAnagram(self, s, t):
 #         """
@@ -913,7 +913,7 @@ import sys
 #         # for i in s:
 #         #     if
 
-#lol this solution works now
+# lol this solution works now
 # if len(s) == len(t):
 #     if sorted(s) == sorted(t):
 #         return True
@@ -1044,7 +1044,7 @@ import sys
 #             i += 1
 #         return digits[::-1]
 
-#LEETCODE SOLUTION FOR FINDING THE  longest prefix SUBSTRING
+# LEETCODE SOLUTION FOR FINDING THE  longest prefix SUBSTRING
 # class Solution(object):
 #     def longestCommonPrefix(self, strs):
 #         """
@@ -1171,13 +1171,13 @@ import sys
 #         else:
 #             return False
 
-            # for i in range(len(flowerbed)):
-        #         if (flowerbed[i] == 0 and flowerbed[i+1] == 1):
-        #             i+=2
-        #             print(i)
-        #         else:
-        #             count+= 1
-        #           #  print (count)
+# for i in range(len(flowerbed)):
+#         if (flowerbed[i] == 0 and flowerbed[i+1] == 1):
+#             i+=2
+#             print(i)
+#         else:
+#             count+= 1
+#           #  print (count)
 
 
 ###############################################Majority Element#################################
@@ -1418,7 +1418,6 @@ import sys
 #
 
 
-
 ###################contains duplicate revised##################################
 # class Solution(object):
 #     def containsDuplicate(self, nums):
@@ -1458,23 +1457,6 @@ import sys
 
 
 #########################wrod patterns##################
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #############deleting the unsorted columns##################################
@@ -1618,7 +1600,7 @@ import sys
 #
 #         # If the number is not a perfect square, return the value "end"
 #         return end
-#leetcode my solution working#### medium
+# leetcode my solution working#### medium
 # class Solution:
 #     def maxIceCream(self, costs: List[int], coins: int) -> int:
 #         costs = sorted(costs)
@@ -2566,7 +2548,7 @@ import sys
 #         return profit
 #
 ###############leetcode problem 39 - combination sum############# solution is working only for the example test cases
- # class Solution:
+# class Solution:
 #     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
 #
 #         num = []
@@ -2642,15 +2624,15 @@ import sys
 #             complement = target - nums[i]
 #             if complement in nums:
 #                 return [i, nums.index(complement)]
-#solution passing all the test cases
-        # hashmap = {}
-        # for i in range(len(nums)):
-        #     complement = target - nums[i]
-        #     if complement in hashmap:
-        #         return [i, hashmap[complement]]
-        #     hashmap[nums[i]] = i
+# solution passing all the test cases
+# hashmap = {}
+# for i in range(len(nums)):
+#     complement = target - nums[i]
+#     if complement in hashmap:
+#         return [i, hashmap[complement]]
+#     hashmap[nums[i]] = i
 ###########word search - my code which is not working##########################
-#m = len(board)
+# m = len(board)
 #         n = len(board[0])
 # #         wordlist = []
 # #         for i in word:
@@ -2843,7 +2825,7 @@ import sys
 #         return ans
 #
 #         return
-    #         answer = [[]]
+#         answer = [[]]
 #         for i in nums2:
 #             if i in nums1:
 #                 nums2.remove(i)
@@ -3044,3 +3026,22 @@ import sys
 #
 #
 # print (matrix)
+
+
+##########dfs recurssive method#########
+
+graph = {
+    'A': ['B', 'C', 'D'], 'B': ['E'], 'C': ['D', 'E'], 'D': [], 'E': []
+}
+visited = set()
+
+
+def dfs(visited, graph, root):
+    if root not in visited:
+        print(root)
+        visited.add(root)
+        for neighbour in graph[root]:
+            dfs(visited, graph, neighbour)
+
+
+dfs(visited, graph, 'A')
