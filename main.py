@@ -1329,3 +1329,30 @@
 #
 #         return max(len_sub)
 #
+
+
+##########sort arrays by parity########
+# class Solution:
+#     def sortArrayByParity(self, nums: List[int]) -> List[int]:
+#
+#         ans_even = []
+#         ans_odd = []
+#         ans_final = []
+#         for i in nums:
+#             if i % 2 == 0:
+#                 ans_even.append(i)
+#             else:
+#                 ans_odd.append(i)
+#
+#         print(ans_odd)
+#         print(ans_even)
+#
+#         for i in range(0, len(ans_even)):
+#             ans_final.append(ans_even[i])
+#
+#         for i in range(0, len(ans_odd)):
+#             ans_final.append(ans_odd[i])
+#
+#         print(ans_final)
+#
+#         return ans_final
