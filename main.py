@@ -1387,3 +1387,18 @@
 #
 #         return True
 #
+
+
+##########good triplets brute force method##########
+# class Solution:
+#     def countGoodTriplets(self, arr: List[int], a: int, b: int, c: int) -> int:
+#
+#         answer = 0
+#         for i in range(len(arr) - 2):
+#             for j in range(len(arr) - 1):
+#                 for k in range(len(arr)):
+#                     if i >= 0 and i < j and j < k and k < len(arr):
+#                         if abs(arr[i] - arr[j]) <= a and abs(arr[j] - arr[k]) <= b and abs(arr[i] - arr[k]) <= c:
+#                             answer += 1
+#
+#         return answer
