@@ -1402,3 +1402,19 @@
 #                             answer += 1
 #
 #         return answer
+
+
+########defanging an IP address#
+# class Solution:
+#     def defangIPaddr(self, address: str) -> str:
+#
+#         ans_str = ''
+#
+#         for i in address:
+#             if i == '.':
+#                 ans_str += '[.]'
+#             else:
+#                 ans_str += i
+#
+#         print(ans_str)
+#         return ans_str
