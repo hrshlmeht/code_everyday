@@ -1418,3 +1418,23 @@
 #
 #         print(ans_str)
 #         return ans_str
+
+###########Ransom Note########
+# class Solution:
+#     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+#
+#         for i in ransomNote:
+#             if i in magazine:
+#                 magazine = magazine.replace(i, "", 1)
+#             else:
+#                 return False
+#
+#         return True
+#
+#         # #magzine_set = set(magazine)
+#         # ans = False
+#         # for i in ransomNote:
+#         #     if i not in magazine:
+#         #         return False
+#
+#         # return True
