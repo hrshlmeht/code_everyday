@@ -1450,3 +1450,28 @@
 #
 #         print(count)
 #         return count
+
+
+####reversing the string 3########### common interview question
+# def reverseWords(self, s: str) -> str:
+#     ans = []
+#     s = s + ' '
+#     ans_string = ''
+#     for i in s:
+#         # print(i)
+#         if i == ' ':
+#             ans.append(ans_string)
+#             ans_string = ''
+#         else:
+#             ans_string = ans_string + i
+#
+#     print(ans)
+#     final_ans = ''
+#     for i in ans:
+#         final_ans = final_ans + ' ' + i[::-1]
+#
+#     final_ans = final_ans.strip()
+#     return final_ans
+# class Solution:
+#
+
