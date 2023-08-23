@@ -1481,3 +1481,27 @@
 #         command = command.replace('()', 'o')
 #         command = command.replace('(al)', 'al')
 #         return command
+
+#
+# class Solution:
+#     def diStringMatch(self, s: str) -> List[int]:
+#
+#         ans = []
+#
+#         lower = 0
+#         upper = len(s)
+#
+#         for i in s:
+#             if i == 'I':
+#                 ans.append(lower)
+#                 lower += 1
+#             else:
+#                 ans.append(upper)
+#                 upper -= 1
+#
+#         if s[len(s) - 1] == 'I':
+#             ans.append(upper)
+#         else:
+#             ans.append(lower)
+#
+#         return ans
