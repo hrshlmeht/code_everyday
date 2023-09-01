@@ -1551,4 +1551,20 @@
 #             nums[i] + nums[j] < target
 #             for i in range(len(nums))
 #             for j in range(i + 1, len(nums))
-#         )
+#
+
+
+##########leetcode hard##### =median of the sorted arrays##########
+# class Solution:
+#     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+#         nums1.extend(nums2)  # Combine the arrays
+#
+#         sorted_arr = sorted(nums1)  # Sort the combined array
+#
+#         n = len(sorted_arr)
+#         if n % 2 == 0:
+#             m1 = sorted_arr[n // 2 - 1]
+#             m2 = sorted_arr[n // 2]
+#             return (m1 + m2) / 2
+#         else:
+#             return sorted_arr[n // 2]
