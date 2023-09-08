@@ -1584,3 +1584,32 @@
 #                 dec = inc + 1
 #
 #         return max(inc, dec)
+
+
+##leetcode problem - contactenating the array and returning the sum of them#########
+# class Solution:
+#     def findTheArrayConcVal(self, nums: List[int]) -> int:
+#         j = len(nums) - 1
+#         ans = 0
+#
+#         for i in range(len(nums)):
+#             if i == j:
+#                 ans += nums[i]
+#                 break
+#
+#             ans_str = str(nums[i]) + str(nums[j])
+#             ans += int(ans_str)
+#             j = j - 1
+#
+#             if i >= j:
+#                 break
+#
+#         return ans
+
+
+
+
+
+
+
+
