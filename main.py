@@ -1638,4 +1638,16 @@
 #
 #         return False
 
+### check if it is possible to split the array or not ## leetcode medium###
+# class Solution:
+#     def canSplitArray(self, nums: List[int], m: int) -> bool:
+#
+#         if len(nums) < 3:
+#             return True
+#
+#         for i in range(len(nums) - 1):
+#             if nums[i] + nums[i + 1] >= m:
+#                 return True
+#
+#         return False
 
