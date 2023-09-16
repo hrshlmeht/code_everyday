@@ -1651,3 +1651,18 @@
 #
 #         return False
 
+
+
+###buying two chocolates##############
+# class Solution:
+#     def buyChoco(self, prices: List[int], money: int) -> int:
+#
+#         prices = sorted(prices)
+#         print(prices)
+#         for i in range(1 , len(prices)):
+#             if prices[i] + prices[i-1] <= money:
+#                 return money - (prices[i] + prices[i-1])
+#             else:
+#                 return money
+#
+
