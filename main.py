@@ -1687,3 +1687,54 @@
 #
 #
 #         return(matrix)
+
+###house robber2##########
+# class Solution:
+#     def rob(self, nums: List[int]) -> int:
+#         if len(nums) == 1:
+#             return nums[0]
+#         memo = [-1 for _ in range(len(nums))]
+#
+#         def dp(i):
+#             if i < 0: ac
+#             return 0
+#             a
+#
+#         elif memo[i] >= 0:
+#         return memo[i]
+#
+#     else:
+#     res = max(dp(i - 2) + nums[i], dp(i - 1))
+#     memo[i] = res
+#     return res
+#
+#
+# a = dp(len(nums) - 2)
+# memo = [-1 for _ in range(len(nums))]
+# nums.pop(0)
+# b = dp(len(nums) - 1)
+# return max(a, b)
+# # class Solution:
+# #     def rob(self, nums: List[int]) -> int:
+#
+# #         ans_even = []
+# #         ans_odd = []
+#
+# #         for i in range ( 0 , len(nums)):
+#
+# #             print(i)
+#
+# #             if i == 0 or i % 2 == 0:
+# #                 ans_even.append(nums[i])
+# #             else:
+# #                 ans_odd.append(nums[i])
+#
+#
+# #         print (ans_even)
+# #         print (ans_odd)
+# #         ans1 = sum(ans_even)
+# #         ans2 = sum(ans_odd)
+#
+# #         return max(ans1 , ans2)
+#
+#
