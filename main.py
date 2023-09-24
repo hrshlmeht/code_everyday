@@ -1759,3 +1759,60 @@
 #                 x.append(key)
 #
 #         return x
+
+#######adding the 2d arrays###########
+# class Solution:
+#     def mergeArrays(self, nums1: List[List[int]], nums2: List[List[int]]) -> List[List[int]]:
+#         merged = []
+#         ptr1, ptr2 = 0, 0
+#
+#         while ptr1 < len(nums1) or ptr2 < len(nums2):
+#             id1 = nums1[ptr1][0] if ptr1 < len(nums1) else float('inf')
+#             id2 = nums2[ptr2][0] if ptr2 < len(nums2) else float('inf')
+#
+#             if id1 < id2:
+#                 merged.append(nums1[ptr1])
+#                 ptr1 += 1
+#             elif id1 > id2:
+#                 merged.append(nums2[ptr2])
+#                 ptr2 += 1
+#             else:
+#                 merged.append([id1, nums1[ptr1][1] + nums2[ptr2][1]])
+#                 ptr1 += 1
+#                 ptr2 += 1
+#
+#         return merged
+#
+# # class Solution:
+# #     def mergeArrays(self, nums1: List[List[int]], nums2: List[List[int]]) -> List[List[int]]:
+# #         index_list = []
+# #         index_list_1 = []
+# #         index_list_2 = []
+#
+# #         for i in nums1:
+# #             index_list_1.append(i[0])
+# #             index_list.append(i[0])
+#
+# #         for j in nums2:
+# #             index_list_2.append(j[0])
+# #             index_list.append(j[0])
+#
+# #         set_list = set(index_list)
+# #         print(index_list_1)
+# #         print(index_list_2)
+#
+# #         print(set_list)
+# #         ans_final = []
+# #         for i in set_list:
+# #             if i in index_list_1 and i not in index_list_2:
+# #                 print(i)
+# #                 # Append the corresponding element from nums1
+# #                 ans_final.append(nums1[index_list_1.index(i)])
+# #             elif i in index_list_2 and i not in index_list_1:
+# #                 # Append the corresponding element from nums2
+# #                 ans_final.append(nums2[index_list_2.index(i)])
+# #             else :
+# #                 # Append the corresponding elements from both nums1 and nums2
+# #                 ans_final.append([nums1[index_list_1.index(i)], nums2[index_list_2.index(i)]])
+#
+# #         print(ans_final)
