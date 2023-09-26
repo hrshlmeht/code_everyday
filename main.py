@@ -12,3 +12,21 @@
 #                 m-=1
 #             nums1[tot] = nums2[i]
 #             tot-=1
+
+
+########rearrange the array without deleting the numbers######
+# class Solution:
+#     def removeElement(self, nums: List[int], val: int) -> int:
+#         j = 0
+#
+#         for i in range(len(nums)):
+#             if nums[i] == val:
+#                 nums[i] = None
+#             else:
+#                 if nums[j] == None:
+#                     nums[j], nums[i] = nums[i], nums[j]
+#
+#                 j += 1
+#
+#         return j
+#         print(nums)
