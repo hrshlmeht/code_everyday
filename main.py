@@ -1910,3 +1910,26 @@
 #             nums.insert(0 ,a)
 
 
+######best time to buy and sell the stock######
+# class Solution(object):
+#     def maxProfit(self, prices):
+#
+#         if len(prices) == 0:
+#             return 0
+#
+#         left = 0
+#         right = 1
+#         max_profit = 0
+#
+#         while right < len(prices):
+#             if prices[left] < prices[right]:
+#                 profit = prices[right] - prices[left]
+#                 max_profit = max(profit, max_profit)
+#             else:
+#                 left = right
+#             right += 1
+#
+#         print(max_profit)
+#         return max_profit
+#
+#
