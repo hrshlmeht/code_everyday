@@ -1933,3 +1933,35 @@
 #         return max_profit
 #
 #
+
+
+####leetcode problem = Letter combination of a phone number
+# class Solution:
+#     def letterCombinations(self, digits: str) -> List[str]:
+#
+#         main_dic = {
+#             '2': 'abc',
+#             '3': 'def',
+#             '4': 'ghi',
+#             '5': 'jkl',
+#             '6': 'mno',
+#             '7': 'pqrs',
+#             '8': 'tuv',
+#             '9': 'wxyz'
+#         }
+#
+#         if not digits:
+#             return []
+#
+#         if len(digits) == 1:
+#             return list(main_dic[digits])
+#
+#         current_combinations = list(main_dic[digits[0]])
+#         next_combinations = self.letterCombinations(digits[1:])
+#
+#         ans = []
+#         for c in current_combinations:
+#             for n in next_combinations:
+#                 ans.append(c + n)
+#
+#         return ans
