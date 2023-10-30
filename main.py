@@ -1978,3 +1978,19 @@
 #
 #         print(result)
 #         return result
+
+#####finding the closest distance to zero fromn the given array#########
+# class Solution:
+#     def findClosestNumber(self, nums: List[int]) -> int:
+#         closest_num = nums[0]
+#         min_diff = abs(nums[0] - 0)
+#
+#         for i in nums[1:]:
+#             j1 = abs(i)
+#             if j1 < min_diff:
+#                 min_diff = j1
+#                 closest_num = i
+#             elif j1 == min_diff and i > closest_num:
+#                 closest_num = i
+#
+#         return closest_num
