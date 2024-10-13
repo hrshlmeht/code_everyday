@@ -2026,3 +2026,37 @@
 #             result = max(result, price - lowest_price)
 #             print(result)
 #         return result
+
+
+# class Solution:
+#     def dividePlayers(self, skill: List[int]) -> int:
+#         skill = sorted(skill)
+#         n = len(skill)
+#         total_sum = sum(skill)
+#
+#         if total_sum % (n // 2) != 0:
+#             return -1
+#
+#         target_sum = total_sum // (n // 2)
+#         result = 0
+#
+#         i, j = 0, n - 1
+#         while i < j:
+#
+#             if skill[i] + skill[j] != target_sum:
+#                 return -1
+#             result += skill[i] * skill[j]
+#             i += 1
+#             j -= 1
+#
+#         return result
+
+
+
+
+
+
+
+
+
+
