@@ -2053,6 +2053,34 @@
 
 
 
+##############atoi leetcode########
+
+# class Solution:
+#     def myAtoi(self, s: str) -> int:
+#         num = '0123456789'
+#         result = ''
+#         for x in s:
+#             if x == ' ' and len(result) == 0:
+#                 continue
+#             if x != ' ' and (x in '-+' or x in num) and len(result) == 0:
+#                 result += x
+#             elif x in num:
+#                 result += x
+#             else:
+#                 break
+#
+#         if result == '' or result in '-+':
+#             return 0
+#
+#         else:
+#             if int(result) < -(2 ** 31):
+#                 return -(2 ** 31)
+#             elif int(result) > (2 ** 31 - 1):
+#                 return (2 ** 31 - 1)
+#
+#             else:
+#                 return int(result)
+
 
 
 
