@@ -2165,3 +2165,23 @@
 #             row2_sum += grid[1][i]
 #
 #         return min_result
+
+
+
+#####leetcode daily -count serversthat communicate####
+# class Solution:
+#     def countServers(self, grid: List[List[int]]) -> int:
+#         m,n=len(grid),len(grid[0])
+#         row_cnts,col_cnts=[0]*m,[0]*n
+#         res=0
+#         arr=[]
+#         for i in range(m):
+#             for j in range(n):
+#                 if grid[i][j]==1:
+#                     row_cnts[i]+=1
+#                     col_cnts[j]+=1
+#                     arr.append([i,j])
+#         for i,j in arr:
+#             if row_cnts[i]>1 or col_cnts[j]>1:
+#                 res+=1
+#         return res
