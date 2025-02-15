@@ -2185,3 +2185,15 @@
 #             if row_cnts[i]>1 or col_cnts[j]>1:
 #                 res+=1
 #         return res
+
+###eetcode h-index problem ########
+# class Solution:
+#     def hIndex(self, citations: List[int]) -> int:
+#         citations.sort(reverse = True)
+#         count = 0
+#         for i,j in enumerate(citations):
+#             if i + 1 <= j:
+#                 count += 1
+#             else:
+#                 break
+#         return count
