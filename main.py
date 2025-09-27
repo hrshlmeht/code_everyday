@@ -2328,3 +2328,24 @@
 #             return ''.join(ans)
 
 #         return ''.join(ans)
+
+
+
+
+###answer for valid triangle
+# class solution:
+#     def valid_triangle(nums) -> int :
+#         count = 0
+#         nums = nums.sort()
+
+#         for i in range(len(nums)):
+#             j = i+1
+#             for j in range(len(nums)):
+#                 k = j+1
+#                 for k in range(len(nums)):
+#                     if nums[i] + nums[j] > nums[k]:
+#                         count =+ 1
+#                     else:
+#                         break
+        
+#         return count
