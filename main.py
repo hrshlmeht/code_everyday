@@ -2349,3 +2349,42 @@
 #                         break
         
 #         return count
+
+
+# class Solution:
+#     def successfulPairs(self, spells, potions, success):
+#         n = len(spells)
+#         m = len(potions)
+#         original_spells = spells[:]
+#         potions.sort()
+#         result = [0] * n
+#         spell_list = []
+#         for i in range(n):
+#             spell_list.append([spells[i], i])
+
+#         spell_list.sort(key=lambda x: x[0])
+
+#         j = m - 1
+#         for k in range(n):
+#             spell = spell_list[k][0]
+#             index = spell_list[k][1]
+
+#             while j >= 0 and spell * potions[j] >= success:
+#                 j -= 1
+#             result[index] = m - (j + 1)
+
+#         return result
+
+
+##my brute force logic or complexity of O(m*n)
+
+# class Solution:
+#     def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
+#         ans = []
+#         for s in spells:
+#             count = 0
+#             for p in potions:
+#                 if s * p >= success:
+#                     count += 1
+#             ans.append(count)
+#         return ans
