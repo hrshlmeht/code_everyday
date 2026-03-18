@@ -2448,3 +2448,52 @@
 #         for n in nums:
 #             ans.append(n)
 #         return ans
+
+
+
+#leetcode problem of the day 
+
+#problem - identifying the shortest algorithm for maze
+def solve_maze(maze):
+    maze = [list(row) for row in maze]  # convert strings to lists so we can edit them
+    
+    # Step 1: Find 'S'
+    for i in range(len(maze)):
+        for j in range(len(maze[0])):
+            if maze[i][j] == 'S':
+                start_row, start_col = i, j
+
+    # Step 2: Run DFS from start
+    def dfs(row, col):
+        # Base cases - out of bounds or wall or visited
+        if row < 0 or row >= len(maze): return False
+        if col < 0 or col >= len(maze[0]): return False
+        if maze[row][col] == '#': return False
+        if maze[row][col] == 'V': return False  # already visited
+
+        # Found the end!
+        if maze[row][col] == 'E': return True
+
+        # Mark as visited
+        maze[row][col] = 'V'
+
+        # Try all 4 directions
+        directions = [(-1,0), (1,0), (0,-1), (0,1)]
+        for dr, dc in directions:
+            if dfs(row + dr, col + dc):
+                maze[row][col] = '*'  # mark path
+                return True
+
+        return False  # dead end, backtrack
+
+    if dfs(start_row, start_col):
+        maze[start_row][start_col] = 'S'  # restore S
+        print("Path found!")
+        for row in maze:
+            print(''.join(row))
+    else:
+        print("No path found")
+
+    
+
+
