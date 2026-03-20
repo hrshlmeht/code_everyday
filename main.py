@@ -48,6 +48,14 @@
 #             area = (right - left) * min(height[left], height[right])
 #             res = max(area, res)
 #
+# #####TWO POINTER - 3Sum
+# # Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+# # Notice that the solution set must not contain duplicate triplets.
+# class Solution:
+#     def threeSum(self, nums: List[int]) -> List[List[int]]:
+#         # Your solution here
+#         pass
+#
 #             if height[right] > height[left]:
 #                 left += 1
 #             else:
@@ -2493,6 +2501,7 @@ def solve_maze(maze):
             print(''.join(row))
     else:
         print("No path found")
+
 
     
 
