@@ -2540,3 +2540,10 @@ def solve_maze(maze):
 #                 return True
         
 #         return False
+
+
+
+# class Solution:
+#     def areSimilar(self, mat: List[List[int]], k: int) -> bool:
+#         n = len(mat[0])  # number of columns
+#         return k % n == 0
