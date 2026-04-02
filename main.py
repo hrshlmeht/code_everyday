@@ -2547,3 +2547,38 @@ def solve_maze(maze):
 #     def areSimilar(self, mat: List[List[int]], k: int) -> bool:
 #         n = len(mat[0])  # number of columns
 #         return k % n == 0
+
+
+
+##code Ffor the day 
+
+# class Solution:
+#     def canPartitionGrid(self, grid: List[List[int]]) -> bool:
+#         m, n = len(grid), len(grid[0])
+        
+#         total = sum(sum(row) for row in grid)
+        
+#         # If total is odd, can't split equally
+#         if total % 2 != 0:
+#             return False
+        
+#         target = total // 2
+        
+#         # Check horizontal cuts
+#         curr_sum = 0
+#         for i in range(m - 1):  # cut after row i
+#             curr_sum += sum(grid[i])
+#             if curr_sum == target:
+#                 return True
+        
+#         # Check vertical cuts
+#         curr_sum = 0
+#         for j in range(n - 1):  # cut after column j
+#             col_sum = 0
+#             for i in range(m):
+#                 col_sum += grid[i][j]
+#             curr_sum += col_sum
+#             if curr_sum == target:
+#                 return True
+        
+#         return False
